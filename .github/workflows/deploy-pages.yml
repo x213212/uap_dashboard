@@ -29,10 +29,16 @@ jobs:
         with:
           python-version: "3.12"
 
+      # build_pages.py itself only uses the standard library, but it shells out
+      # to earth_texture_lod.py to re-sign the texture manifests, and that one
+      # needs Pillow. Reading only the entry point's imports is how this step
+      # was first shipped without it, and the build failed in CI.
+      - name: Install build dependencies
+        run: pip install "Pillow>=10,<12"
+
       # build_pages.py is the public projection of the release: it copies only
       # what a browser is allowed to see and leaves the optional high-resolution
-      # texture pack out, so dist/ can be published as-is. It needs no
-      # third-party packages, so there is nothing to install.
+      # texture pack out, so dist/ can be published as-is.
       - name: Build the publishable map
         run: python build_pages.py --output dist --force
 
