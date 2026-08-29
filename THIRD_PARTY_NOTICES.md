@@ -4,6 +4,9 @@ The MIT licence in `LICENSE` covers the code in this repository. It does not
 cover the third-party assets shipped alongside it, nor any data you collect with
 these tools. Those keep the terms below.
 
+The project's own prose — the README, the Chinese ledgers and review records —
+is covered by the same MIT licence as the code.
+
 ## Assets in this repository
 
 ### NASA Blue Marble Next Generation — `map_app/assets/nasa_blue_marble_*.jpg`, `map_app/assets/earth_lod1/**`
@@ -27,6 +30,22 @@ Terms
 : Public domain. Country outlines are a cartographic product at 1:50m and
   1:110m scale; they are not a legal boundary claim, and this project asserts no
   position on any territorial question.
+
+### Screenshot — `docs/screenshot-globe.jpg`
+
+A capture of the running map. It is a composite of the NASA Blue Marble surface,
+the Natural Earth outlines and UAPDrop report positions, and it carries the same
+attributions those assets require; the map's own credit line is visible in the
+image.
+
+### Rights-review receipts — `data/rights_review/**`
+
+Each receipt records one fetch of a provider's licence or terms page: the URL,
+HTTP status, byte count, a digest of the exact bytes read, and **short verbatim
+quotations of the clauses that decided the verdict**. Those quotations are the
+providers' words, reproduced only as the evidence behind an admission decision,
+and they carry whatever terms the provider's page carries. They are kept because
+a verdict without its evidence is only an assertion.
 
 ## Data these tools collect
 
