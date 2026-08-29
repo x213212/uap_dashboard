@@ -166,6 +166,24 @@ Before you publish, three things are worth knowing:
 Rebuild and repeat step 3 to update. The release data changes only when you
 re-run `build_map.py`, so a texture or interface change is a small push.
 
+## Key material
+
+Nothing in this project needs a private key: the map is read-only and the
+collectors use public endpoints. A key in a commit would therefore always be a
+mistake, so it is blocked rather than remembered.
+
+```bash
+# Install the guard after cloning.
+cp tools/git-hooks/pre-commit .git/hooks/pre-commit
+chmod +x .git/hooks/pre-commit
+```
+
+The hook refuses a commit whose staged files carry key-shaped names
+(`id_rsa`, `*_ed25519*`, `*.pem`, `*.key`, `.env`, …) **or** whose staged content
+holds a private-key header or an access token — so renaming a key to something
+innocuous does not get it past. `.gitignore` carries the same name patterns as a
+first line of defence.
+
 ## Licence
 
 The code is MIT (`LICENSE`). The shipped assets and anything you collect are not:

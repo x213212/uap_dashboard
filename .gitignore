@@ -6,6 +6,25 @@ __pycache__/
 # Local server and tool logs: request logs contain client addresses.
 *.log
 
+# Key material. Nothing here needs a private key; these patterns exist so a
+# stray copy cannot be staged by accident. tools/git-hooks/pre-commit enforces
+# the same rule on content, not just on names.
+*.pem
+*.key
+*.ppk
+*.p12
+*.pfx
+id_rsa*
+id_dsa*
+id_ecdsa*
+id_ed25519*
+*_ed25519*
+.ssh/
+**/.ssh/
+authorized_keys
+.env
+.env.*
+
 # Collected evidence and derived data.
 #
 # Raw snapshots, canonical records, the warehouse and built releases are not
