@@ -1,0 +1,19 @@
+{
+  "schema_version": "uap.source_rights_receipt.v1",
+  "source_id": "ufosint_public_sqlite",
+  "target_kind": "github_repo",
+  "url": "https://api.github.com/repos/UFOSINT/ufosint-explorer",
+  "fetched_at": "2026-08-29T16:17:33Z",
+  "http_status": 200,
+  "error": null,
+  "bytes": 6954,
+  "sha256": "64c8bf9e9f174a4c6250b507faa4226816b6bd06610e075a5686dc5fd16a1de7",
+  "clauses": [],
+  "signals": {
+    "declared_license": null,
+    "declared_license_name": null,
+    "archived": false,
+    "full_name": "UFOSINT/ufosint-explorer",
+    "no_declared_license": true
+  }
+}

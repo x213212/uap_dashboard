@@ -1,0 +1,215 @@
+{
+  "schema_version": "uap.source_rights_targets.v1",
+  "usage": "Licence, terms and package-metadata pages a reviewer may fetch for each registry source. A target may never be a registry data endpoint; source_rights_review.py enforces that. Verdicts are human decisions recorded here and evidenced by the receipts under data/rights_review/.",
+  "sources": {
+    "global_meteor_network_meteor": {
+      "targets": [
+        {
+          "kind": "terms_page",
+          "url": "https://globalmeteornetwork.org/data/"
+        }
+      ],
+      "verdict": {
+        "state": "PASS",
+        "license": "CC-BY-4.0",
+        "publishable": true,
+        "obligations": "Attribute the network and cite the Vida et al. papers wherever the data is shown.",
+        "basis": "The data page states the data are released under the CC BY 4.0 license and asks for citation.",
+        "decided_at": "2026-08-30",
+        "notes": "Cleanest licence in the registry. Role is false_positive_control (meteors), not a sighting source."
+      }
+    },
+    "nara_uap_bulk": {
+      "targets": [
+        {
+          "kind": "terms_page",
+          "url": "https://www.archives.gov/global-pages/privacy.html"
+        }
+      ],
+      "verdict": {
+        "state": "PASS_WITH_CONDITIONS",
+        "license": "US-Gov-PublicDomain",
+        "publishable": "per_item",
+        "obligations": "Check each item: donated holdings may carry use restrictions, and NARA does not confirm copyright status per item.",
+        "basis": "Materials produced by Federal agencies are in the public domain and may be reproduced without permission; not all materials on the site are, and donated items may be restricted.",
+        "decided_at": "2026-08-30",
+        "notes": "Legally the most permissive path to scanned documents. Blocker is a connector plus catalog API credentials, not rights."
+      }
+    },
+    "geipan": {
+      "targets": [
+        {
+          "kind": "licence_page",
+          "url": "https://www.cnes-geipan.fr/fr/mentions_legales"
+        }
+      ],
+      "verdict": {
+        "state": "CONDITIONAL",
+        "license": "All rights reserved (CNES)",
+        "publishable": false,
+        "obligations": "Private-copy or educational use only, each reproduction carrying the CNES notice verbatim.",
+        "basis": "Reproduction, extraction and derivative works are formally and strictly forbidden outside the private-copy or educational exception; the site is not on data.gouv.fr, so no Licence Ouverte applies.",
+        "decided_at": "2026-08-30",
+        "notes": "Publishing requires written CNES authorisation via their contact form. The registry CSV URL now returns a 404 page and must be relocated."
+      }
+    },
+    "geipan_cases_witnesses_csv": {
+      "targets": [
+        {
+          "kind": "licence_page",
+          "url": "https://www.cnes-geipan.fr/fr/mentions_legales"
+        }
+      ],
+      "verdict": {
+        "state": "CONDITIONAL",
+        "license": "All rights reserved (CNES)",
+        "publishable": false,
+        "obligations": "Same as geipan: local, non-published use with the CNES notice.",
+        "basis": "Same CNES legal notice governs the case CSV exports.",
+        "decided_at": "2026-08-30"
+      }
+    },
+    "nuforc": {
+      "targets": [
+        {
+          "kind": "terms_page",
+          "url": "https://nuforc.org/terms-of-use/"
+        }
+      ],
+      "verdict": {
+        "state": "REJECT",
+        "license": "unknown",
+        "publishable": false,
+        "obligations": "Written permission from NUFORC before any ingestion.",
+        "basis": "The site returns HTTP 403 to identified automated requests, and the admission queue already records that NUFORC prohibits unauthorised bulk extraction.",
+        "decided_at": "2026-08-30",
+        "notes": "Access controls were not circumvented. Mirror routes stay REJECTED_AS_INGESTION."
+      }
+    },
+    "ufosint_public_sqlite": {
+      "targets": [
+        {
+          "kind": "github_repo",
+          "url": "https://api.github.com/repos/UFOSINT/ufosint-explorer"
+        },
+        {
+          "kind": "github_repo",
+          "url": "https://api.github.com/repos/UFOSINT/ufo-dedup"
+        },
+        {
+          "kind": "terms_page",
+          "url": "https://raw.githubusercontent.com/UFOSINT/ufo-dedup/main/data/raw/README.md"
+        }
+      ],
+      "verdict": {
+        "state": "REJECT",
+        "license": "none declared",
+        "publishable": false,
+        "obligations": "Would need a licence grant from UFOSINT and clearance from NUFORC, MUFON and CUFOS upstream.",
+        "basis": "Neither repository declares a licence, so default copyright applies; the project's own data README states the source files have licensing restrictions that prevent redistribution, and names MUFON and CUFOS ownership upstream.",
+        "decided_at": "2026-08-30",
+        "notes": "ufosint-explorer does publish ufo_public.db as a release asset (628.1 MB, not the 553 MB recorded in the 2026-08-13 queue). Publication is not a licence."
+      }
+    },
+    "uapdrop": {
+      "targets": [
+        {
+          "kind": "terms_page",
+          "url": "https://www.uapdrop.com/data.html"
+        },
+        {
+          "kind": "terms_page",
+          "url": "https://www.uapdrop.com/"
+        }
+      ],
+      "verdict": {
+        "state": "PASS",
+        "license": "CC-BY-4.0",
+        "publishable": true,
+        "obligations": "Attribute UAPDrop and carry the citation: UAPDrop. \"UAP Sightings Open Dataset.\" UAPDrop, https://www.uapdrop.com/data.html",
+        "basis": "The data page states the compiled dataset is released under CC BY 4.0, free to share and adapt with attribution, and that underlying government records remain in the public domain under their originating archives' terms.",
+        "decided_at": "2026-08-30",
+        "notes": "This is the entire sighting layer on the map (28,252 features). Per-record original_source_url must stay visible so the authoritative record is reachable."
+      }
+    },
+    "uap_observatory": {
+      "targets": [
+        {
+          "kind": "terms_page",
+          "url": "https://uapobservatory.org/"
+        },
+        {
+          "kind": "terms_page",
+          "url": "https://uapobservatory.org/about/"
+        }
+      ],
+      "verdict": {
+        "state": "PENDING",
+        "publishable": null,
+        "basis": "No terms or licence statement found on the site; the about page returns 404.",
+        "decided_at": "2026-08-30",
+        "notes": "Already ingested but contributes 0 map features: all 118 records lack coordinates, so publishing the map today does not republish it."
+      }
+    },
+    "nasa_fireball": {
+      "targets": [
+        {
+          "kind": "terms_page",
+          "url": "https://ssd-api.jpl.nasa.gov/doc/fireball.html"
+        },
+        {
+          "kind": "licence_page",
+          "url": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+        }
+      ],
+      "verdict": {
+        "state": "PASS",
+        "license": "NASA media usage (US Gov work)",
+        "publishable": true,
+        "obligations": "Acknowledge NASA as the source; factual use only, no implied endorsement, no NASA insignia.",
+        "basis": "NASA content used in a factual manner that does not imply endorsement may be used without needing explicit permission; NASA should be acknowledged as the source.",
+        "decided_at": "2026-08-30",
+        "notes": "NASA's separate AI clause forbids attributing model-internalised information to NASA; displaying the dataset factually with attribution is not that case."
+      }
+    },
+    "nasa_horizons_9_bodies": {
+      "targets": [
+        {
+          "kind": "terms_page",
+          "url": "https://ssd.jpl.nasa.gov/horizons/"
+        },
+        {
+          "kind": "licence_page",
+          "url": "https://www.nasa.gov/nasa-brand-center/images-and-media/"
+        }
+      ],
+      "verdict": {
+        "state": "PASS",
+        "license": "NASA media usage (US Gov work)",
+        "publishable": true,
+        "obligations": "Acknowledge NASA as the source; factual use only, no implied endorsement, no NASA insignia.",
+        "basis": "NASA content used in a factual manner that does not imply endorsement may be used without needing explicit permission; NASA should be acknowledged as the source.",
+        "decided_at": "2026-08-30",
+        "notes": "NASA's separate AI clause forbids attributing model-internalised information to NASA; displaying the dataset factually with attribution is not that case."
+      }
+    },
+    "war_gov_uap": {
+      "targets": [
+        {
+          "kind": "terms_page",
+          "url": "https://www.war.gov/UFO/"
+        },
+        {
+          "kind": "licence_page",
+          "url": "https://www.war.gov/Help/Copyright-Notice/"
+        }
+      ],
+      "verdict": {
+        "state": "PENDING",
+        "publishable": null,
+        "basis": "The UAP page carries no rights statement and the site's copyright notice path returns 404; US federal authorship is likely but unverified.",
+        "decided_at": "2026-08-30"
+      }
+    }
+  }
+}

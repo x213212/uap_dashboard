@@ -1,0 +1,15 @@
+{
+  "schema_version": "uap.source_rights_receipt.v1",
+  "source_id": "nasa_fireball",
+  "target_kind": "licence_page",
+  "url": "https://www.jpl.nasa.gov/jpl-image-use-policy/",
+  "fetched_at": "2026-08-29T16:28:35Z",
+  "http_status": 403,
+  "error": "Forbidden",
+  "bytes": 0,
+  "sha256": null,
+  "clauses": [],
+  "signals": {
+    "access_blocked": true
+  }
+}

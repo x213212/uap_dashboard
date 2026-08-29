@@ -1,0 +1,42 @@
+{
+  "schema_version": "uap.source_rights_receipt.v1",
+  "source_id": "geipan",
+  "target_kind": "licence_page",
+  "url": "https://www.cnes-geipan.fr/fr/mentions_legales",
+  "fetched_at": "2026-08-29T16:18:05Z",
+  "http_status": 200,
+  "error": null,
+  "bytes": 29875,
+  "sha256": "dfeba6695974ad7fce2b75abd76f2f2664b4b09f68b77105677f13844232b6cd",
+  "clauses": [
+    {
+      "family": "restriction",
+      "text": "En conséquence, et de manière non exhaustive, les droits de (i) reproduire, représenter, adapter et/ou traduire, (ii) extraire, ou (iii) de créer tout travail dérivé de tout ou partie du site Internet et/ou de contenus y afférent, sont formellement et strictement interdits en dehors du cadre strictement limité à l’exception de copie privée ou à visée éducative."
+    },
+    {
+      "family": "restriction",
+      "text": "Informations protégées - Tous droits réservés © CNES (+ année publication) » FAQ GEIPAN L’espace FAQ vous offre un accès rapide aux réponses aux questions les plus courantes concernant le rôle, les missions et les activités du GEIPAN."
+    },
+    {
+      "family": "redistribution",
+      "text": "Dans les cas de copie privée ou à visée éducative, toute reproduction par l’utilisateur de données doit s’accompagner, de manière lisible et claire, de la mention suivante : « ce document est extrait du site Internet GEIPAN."
+    },
+    {
+      "family": "permission",
+      "text": "Les témoignages de mineurs sont soumis à une autorisation parentale."
+    },
+    {
+      "family": "attribution",
+      "text": "Page Des Mentions Légales | GEIPAN Pour témoigner, le questionnaire technique est obligatoire! Questionnaire Technique Geipan Groupe d’études et d’informations sur les phénomènes aérospatiaux non identifiés."
+    },
+    {
+      "family": "attribution",
+      "text": "L’utilisateur n’accède ni n’utilise le site Internet à des fins illicites ou prohibées."
+    },
+    {
+      "family": "attribution",
+      "text": "Le GEIPAN collecte les témoignages, procède à une analyse des données puis à une enquête selon une approche multidisciplinaire combinant sciences physiques et facteurs humains, Le GEIPAN utilise uniquement des connaissances scientifiques reconnues, sans spéculation ou hypothèse non vérifiée, Il n’a pas vocation à répondre immédiatement aux sollicitations liées à des observations de PAN."
+    }
+  ],
+  "signals": {}
+}

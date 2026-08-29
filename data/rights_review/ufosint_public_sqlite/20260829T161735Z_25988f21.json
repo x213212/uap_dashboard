@@ -1,0 +1,62 @@
+{
+  "schema_version": "uap.source_rights_receipt.v1",
+  "source_id": "ufosint_public_sqlite",
+  "target_kind": "terms_page",
+  "url": "https://raw.githubusercontent.com/UFOSINT/ufo-dedup/main/data/raw/README.md",
+  "fetched_at": "2026-08-29T16:17:35Z",
+  "http_status": 200,
+  "error": null,
+  "bytes": 9581,
+  "sha256": "42af88503eeb6b3818b5337af1474190043c01511b63e6fb242c11a5619e85d2",
+  "clauses": [
+    {
+      "family": "licence",
+      "text": "--- ## Per-source acquisition notes The data ecosystem around UFO/UAP reports is fragmented — sources have different licenses, access models, and update cadences."
+    },
+    {
+      "family": "licence",
+      "text": "- **License**: Reports are user-submitted to NUFORC."
+    },
+    {
+      "family": "licence",
+      "text": "- **Community sources**: Some older snapshots circulate publicly but are typically out of date and may have been obtained without explicit license."
+    },
+    {
+      "family": "licence",
+      "text": "- **License**: MUFON owns the case database."
+    },
+    {
+      "family": "licence",
+      "text": "- **License**: CUFOS-owned."
+    },
+    {
+      "family": "licence",
+      "text": "- **License**: PhenomAInon's terms apply."
+    },
+    {
+      "family": "licence",
+      "text": "- **License**: Compilation by Geldreich; underlying records mostly from public-domain government / academic sources."
+    },
+    {
+      "family": "restriction",
+      "text": "**None of the actual data files are committed to this repo** — they're either too large, paid/subscription-gated, or have licensing restrictions that prevent redistribution."
+    },
+    {
+      "family": "redistribution",
+      "text": "We can't redistribute these files but we can point you at the right starting line for each one."
+    },
+    {
+      "family": "redistribution",
+      "text": "org - **Direct database access**: NUFORC does not publish a bulk download."
+    },
+    {
+      "family": "redistribution",
+      "text": "Their website is browseable but scrape-protected."
+    },
+    {
+      "family": "redistribution",
+      "text": "- **Common community sources**: - Periodic scrapes published on Kaggle (search \"NUFORC ufo sightings\") - GitHub repos that mirror older snapshots - The Phenomenon archive (phenomenon."
+    }
+  ],
+  "signals": {}
+}

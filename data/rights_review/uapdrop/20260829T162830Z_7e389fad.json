@@ -1,0 +1,34 @@
+{
+  "schema_version": "uap.source_rights_receipt.v1",
+  "source_id": "uapdrop",
+  "target_kind": "terms_page",
+  "url": "https://www.uapdrop.com/data.html",
+  "fetched_at": "2026-08-29T16:28:30Z",
+  "http_status": 200,
+  "error": null,
+  "bytes": 23345,
+  "sha256": "3ba59f9764efee7274a59515e7ec5afc321f8363b56a75a0e96d8471bfd66e31",
+  "clauses": [
+    {
+      "family": "licence",
+      "text": "The compiled dataset is released under CC BY 4.0 — free to share and adapt with attribution to UAPDrop."
+    },
+    {
+      "family": "licence",
+      "text": "The underlying government records remain in the public domain under their originating archives' terms."
+    },
+    {
+      "family": "permission",
+      "text": "Follow us on: ✕ Sign in to UAPDrop Authorize with your Google account to manage your profile and preferences."
+    },
+    {
+      "family": "attribution",
+      "text": "The full dataset is published here as a free download so researchers, journalists, and educators can analyse and cite it directly."
+    },
+    {
+      "family": "attribution",
+      "text": "How to cite When referencing this dataset, please cite it as: UAPDrop."
+    }
+  ],
+  "signals": {}
+}

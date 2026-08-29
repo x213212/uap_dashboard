@@ -1,0 +1,13 @@
+{
+  "schema_version": "uap.source_rights_receipt.v1",
+  "source_id": "nasa_fireball",
+  "target_kind": "terms_page",
+  "url": "https://ssd-api.jpl.nasa.gov/doc/fireball.html",
+  "fetched_at": "2026-08-29T16:29:16Z",
+  "http_status": 200,
+  "error": null,
+  "bytes": 19490,
+  "sha256": "bd0139832d22bbeb73ab7af8aeaa1d6f43e4163b73f48274fe44755648ca2558",
+  "clauses": [],
+  "signals": {}
+}

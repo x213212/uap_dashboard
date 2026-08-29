@@ -1,0 +1,15 @@
+{
+  "schema_version": "uap.source_rights_receipt.v1",
+  "source_id": "nuforc",
+  "target_kind": "terms_page",
+  "url": "https://nuforc.org/terms-of-use/",
+  "fetched_at": "2026-08-29T16:17:33Z",
+  "http_status": 403,
+  "error": "Forbidden",
+  "bytes": 0,
+  "sha256": null,
+  "clauses": [],
+  "signals": {
+    "access_blocked": true
+  }
+}

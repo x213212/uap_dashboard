@@ -1,0 +1,62 @@
+{
+  "schema_version": "uap.source_rights_receipt.v1",
+  "source_id": "nara_uap_bulk",
+  "target_kind": "terms_page",
+  "url": "https://www.archives.gov/global-pages/privacy.html",
+  "fetched_at": "2026-08-29T16:17:32Z",
+  "http_status": 200,
+  "error": null,
+  "bytes": 57081,
+  "sha256": "8d9c84415d96bc54f1e8d65320e2f35c25a9d464f1d8d6245707c64051120799",
+  "clauses": [
+    {
+      "family": "licence",
+      "text": "Copyright, Restrictions, and Permissions Notice Generally, materials produced by Federal agencies are in the public domain and may be reproduced without permission."
+    },
+    {
+      "family": "licence",
+      "text": "Government that have been produced by the National Archives and Records Administration are in the public domain and may be copied and distributed without permission."
+    },
+    {
+      "family": "licence",
+      "text": "These works are available for worldwide use and reuse under the terms of the Creative Commons CC0 1."
+    },
+    {
+      "family": "licence",
+      "text": "However, not all materials appearing on this website are in the public domain."
+    },
+    {
+      "family": "licence",
+      "text": "Images on our website (or a third party site where we share images, such as Flickr) which are in the public domain may be used without permission."
+    },
+    {
+      "family": "permission",
+      "text": "The National Archives employees and authorized contractors who handle credit card information must ensure that it is treated as cash and secured accordingly."
+    },
+    {
+      "family": "permission",
+      "text": "You can revoke your permission at any time using the Unsubscribe link found at the bottom of every email newsletter."
+    },
+    {
+      "family": "permission",
+      "text": "If you have copyright information about an item you've seen on our website, including items in the National Archives Catalog , or if you are the copyright owner and believe our website has not properly attributed your work to you or has used it without permission, we want to hear from you."
+    },
+    {
+      "family": "permission",
+      "text": "Permission to use these images should be obtained directly from those organizations."
+    },
+    {
+      "family": "permission",
+      "text": "To purchase a copy of these materials, you must obtain permission from the donor."
+    },
+    {
+      "family": "permission",
+      "text": "We have provided a Source and Permissions Contact List for some motion pictures, sound and video which may assist you."
+    },
+    {
+      "family": "permission",
+      "text": "Security For site security purposes and to ensure that this service remains available to all users, we use special software programs for monitoring network traffic to identify unauthorized attempts to upload or change information, or otherwise cause damage to to this government computer system."
+    }
+  ],
+  "signals": {}
+}

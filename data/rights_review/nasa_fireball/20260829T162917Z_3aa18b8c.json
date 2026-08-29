@@ -1,0 +1,62 @@
+{
+  "schema_version": "uap.source_rights_receipt.v1",
+  "source_id": "nasa_fireball",
+  "target_kind": "licence_page",
+  "url": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+  "fetched_at": "2026-08-29T16:29:17Z",
+  "http_status": 200,
+  "error": null,
+  "bytes": 310438,
+  "sha256": "399121571bcd7e7a202c7e78da2bd977911d5f1fdfe2003daa665fc2222dd785",
+  "clauses": [
+    {
+      "family": "restriction",
+      "text": "Astronauts or NASA employees who are retired from the agency can grant permission for the use of their names, likenesses or other personality traits in their discretion, but their former affiliation with NASA may not be used to promote any product, service or activity."
+    },
+    {
+      "family": "restriction",
+      "text": "In such a case, the restrictions set forth above may still be applicable, so permission may still be necessary."
+    },
+    {
+      "family": "restriction",
+      "text": "Therefore, attribution of the information directly to NASA is not permitted."
+    },
+    {
+      "family": "restriction",
+      "text": "References like “according to NASA” or similar are prohibited in AI products."
+    },
+    {
+      "family": "permission",
+      "text": "This general permission extends to personal Web pages."
+    },
+    {
+      "family": "permission",
+      "text": "News outlets, schools, and text-book authors may use NASA content without needing explicit permission, subject to compliance with these guidelines."
+    },
+    {
+      "family": "permission",
+      "text": "NASA content used in a factual manner that does not imply endorsement may be used without needing explicit permission."
+    },
+    {
+      "family": "permission",
+      "text": "NASA occasionally uses copyright-protected material of third parties with permission on its website."
+    },
+    {
+      "family": "permission",
+      "text": "News outlets, schools, and text-book authors News outlets, schools, and text-book authors may use NASA content without needing explicit permission, subject to compliance with these guidelines."
+    },
+    {
+      "family": "permission",
+      "text": "Media including Identifiable Persons If a NASA image, audio, video or media includes an identifiable person, using the media for commercial purposes may infringe that person’s right of privacy or publicity, and permission should be obtained from the person."
+    },
+    {
+      "family": "permission",
+      "text": "For deceased astronauts or employees, their estates may retain rights in the deceased person’s name, likeness or other personality traits, so permission may still be needed."
+    },
+    {
+      "family": "permission",
+      "text": "Source Disclosure (No Permission Implied): As a statement of fact, you can acknowledge your AI tool includes NASA source material, but do not imply any review or permission was granted by NASA for its specific use."
+    }
+  ],
+  "signals": {}
+}

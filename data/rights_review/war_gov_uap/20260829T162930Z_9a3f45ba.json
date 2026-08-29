@@ -1,0 +1,15 @@
+{
+  "schema_version": "uap.source_rights_receipt.v1",
+  "source_id": "war_gov_uap",
+  "target_kind": "licence_page",
+  "url": "https://www.war.gov/Help/Copyright-Notice/",
+  "fetched_at": "2026-08-29T16:29:30Z",
+  "http_status": 404,
+  "error": "Not Found",
+  "bytes": 0,
+  "sha256": null,
+  "clauses": [],
+  "signals": {
+    "access_blocked": false
+  }
+}

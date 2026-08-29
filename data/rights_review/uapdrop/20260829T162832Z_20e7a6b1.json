@@ -1,0 +1,26 @@
+{
+  "schema_version": "uap.source_rights_receipt.v1",
+  "source_id": "uapdrop",
+  "target_kind": "terms_page",
+  "url": "https://www.uapdrop.com/",
+  "fetched_at": "2026-08-29T16:28:32Z",
+  "http_status": 200,
+  "error": null,
+  "bytes": 66633,
+  "sha256": "85054e5c2d3d58ad0d62c4a7795a5e8282a04c710c6802dd3489d045ce6d45c1",
+  "clauses": [
+    {
+      "family": "restriction",
+      "text": "The hosts describe the envelope as a long‑missing physical artifact central to the Dark Skies investigation and plan to open the material for unrestricted public use and scrutiny."
+    },
+    {
+      "family": "redistribution",
+      "text": "The meeting is intended to convene researchers, experiencers, policymakers, ethicists, and faith leaders to develop reproducible interview protocols, data‑integration workshops, and briefings for agency participants."
+    },
+    {
+      "family": "permission",
+      "text": "Follow us on: ✕ Sign in to UAPDrop Authorize with your Google account to manage your profile and preferences."
+    }
+  ],
+  "signals": {}
+}

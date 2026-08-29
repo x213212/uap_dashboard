@@ -1,0 +1,1579 @@
+{
+  "schema_version": "uap.earth_texture_lod.v2",
+  "asset_id": "nasa-blue-marble-next-generation-topography-bathymetry-june-2004-lod1-21600x10800",
+  "source_asset_id": "nasa-blue-marble-next-generation-topography-bathymetry-june-2004-21600x10800",
+  "source_url": "https://assets.science.nasa.gov/content/dam/science/esd/eo/images/bmng/bmng-topography-bathymetry/june/world.topo.bathy.200406.3x21600x10800.jpg",
+  "source_sha256": "d52c33cac35574937cbe3c07baf1e9b606a9d7010d7d7b02bee056b7969118a3",
+  "source_width": 21600,
+  "source_height": 10800,
+  "columns": 12,
+  "rows": 6,
+  "media_type": "image/jpeg",
+  "attribution": "NASA Earth Observatory — Blue Marble Next Generation",
+  "license": "NASA media usage; attribution required, no endorsement implied",
+  "license_url": "https://www.nasa.gov/nasa-brand-center/",
+  "usage": "Near-surface globe texture pyramid. The browser picks one level per frame from the on-screen pixels-per-degree demand and requests local tiles only.",
+  "levels": [
+    {
+      "level": 0,
+      "columns": 12,
+      "rows": 6,
+      "tile_width": 450,
+      "tile_height": 450,
+      "width": 5400,
+      "height": 2700,
+      "pixels_per_degree": 15.0,
+      "tiles": [
+        {
+          "column": 0,
+          "row": 0,
+          "path": "earth_lod1/l0/tile_00_00.jpg",
+          "bytes": 43608,
+          "sha256": "a47a200bb2fca42c9503638f97e554e64752ee6f2284a86c943a8b634530fbfd"
+        },
+        {
+          "column": 1,
+          "row": 0,
+          "path": "earth_lod1/l0/tile_01_00.jpg",
+          "bytes": 46476,
+          "sha256": "5070b09dbae9afb9491d76c2b6c25f35e3c21d27951882b05f7aa4985e4202b3"
+        },
+        {
+          "column": 2,
+          "row": 0,
+          "path": "earth_lod1/l0/tile_02_00.jpg",
+          "bytes": 72055,
+          "sha256": "e15f5978e9c9db840db8e0fd021f4d74442f85e7774ee2efa3583ef53eac93c7"
+        },
+        {
+          "column": 3,
+          "row": 0,
+          "path": "earth_lod1/l0/tile_03_00.jpg",
+          "bytes": 68817,
+          "sha256": "890e1b27f18073c38655c4a1d490733bf2a7e24d00a5d27ef9abd5bbb656cd2b"
+        },
+        {
+          "column": 4,
+          "row": 0,
+          "path": "earth_lod1/l0/tile_04_00.jpg",
+          "bytes": 34252,
+          "sha256": "40f711e2d5fdd9ac4ea7c41b715b117bcb93611b88fed2355ec76ed00a1a67ff"
+        },
+        {
+          "column": 5,
+          "row": 0,
+          "path": "earth_lod1/l0/tile_05_00.jpg",
+          "bytes": 47289,
+          "sha256": "526cd5bf0ad77c14d853cda72788de558623cb13a5e63e3c587310ca5719a23c"
+        },
+        {
+          "column": 6,
+          "row": 0,
+          "path": "earth_lod1/l0/tile_06_00.jpg",
+          "bytes": 45177,
+          "sha256": "909fc332443934353b5f3c6cee4f1851d4fb6c070a2dbc24f710085ba6f21737"
+        },
+        {
+          "column": 7,
+          "row": 0,
+          "path": "earth_lod1/l0/tile_07_00.jpg",
+          "bytes": 41223,
+          "sha256": "e46ab1418593c85d8a36124a838e7d5dcebccdebf381a7d742a8bc1bcd5a771d"
+        },
+        {
+          "column": 8,
+          "row": 0,
+          "path": "earth_lod1/l0/tile_08_00.jpg",
+          "bytes": 53543,
+          "sha256": "0626846ab975c2149d46d83f7172d6c06c9f92751893659eedda1e1f5a52d965"
+        },
+        {
+          "column": 9,
+          "row": 0,
+          "path": "earth_lod1/l0/tile_09_00.jpg",
+          "bytes": 54106,
+          "sha256": "6bdb3c97afb866cee6bb42b7a19ae414f71338700d2570ebca5d03f0920134b8"
+        },
+        {
+          "column": 10,
+          "row": 0,
+          "path": "earth_lod1/l0/tile_10_00.jpg",
+          "bytes": 57304,
+          "sha256": "c5faa55fa9a1eab41cd657858f8e4d68cb668f949fbbf6700fbc92f07777cf90"
+        },
+        {
+          "column": 11,
+          "row": 0,
+          "path": "earth_lod1/l0/tile_11_00.jpg",
+          "bytes": 50297,
+          "sha256": "79c8d04a03094ba36e5aca4c88db159457259e4b95dcb59904be162ba8ed21f4"
+        },
+        {
+          "column": 0,
+          "row": 1,
+          "path": "earth_lod1/l0/tile_00_01.jpg",
+          "bytes": 18226,
+          "sha256": "64b8c62e94d3beb46c2df070b7e671a5f2c3377100e2e4a88b5c3c7cdc0211e5"
+        },
+        {
+          "column": 1,
+          "row": 1,
+          "path": "earth_lod1/l0/tile_01_01.jpg",
+          "bytes": 38503,
+          "sha256": "dce6e8ed9598f48141e95bc8284f7cb0a1aadf1dfe16938fc2b671c1e8e63302"
+        },
+        {
+          "column": 2,
+          "row": 1,
+          "path": "earth_lod1/l0/tile_02_01.jpg",
+          "bytes": 66315,
+          "sha256": "03bc0b501beaf16aa505cf99131ac6f432fdc227f3270f78e03dd8f504644cfe"
+        },
+        {
+          "column": 3,
+          "row": 1,
+          "path": "earth_lod1/l0/tile_03_01.jpg",
+          "bytes": 54345,
+          "sha256": "bb675f75c85130ef4008e8da53d6c451943215f924b130d5f2605e4726b4f8ca"
+        },
+        {
+          "column": 4,
+          "row": 1,
+          "path": "earth_lod1/l0/tile_04_01.jpg",
+          "bytes": 29410,
+          "sha256": "9d5c6558e96ff8faa20139144d926a955bf8901e72fc53436044b8d96ac4a75f"
+        },
+        {
+          "column": 5,
+          "row": 1,
+          "path": "earth_lod1/l0/tile_05_01.jpg",
+          "bytes": 42873,
+          "sha256": "54b6d720d488db2c902436aad0c992e6f7ee332de27a3a4a01cb7301688cf51a"
+        },
+        {
+          "column": 6,
+          "row": 1,
+          "path": "earth_lod1/l0/tile_06_01.jpg",
+          "bytes": 62230,
+          "sha256": "798cfcc51e48494291a88f32bb4d316ec2c3fcb17c57d95cbebcf3dd5529bb84"
+        },
+        {
+          "column": 7,
+          "row": 1,
+          "path": "earth_lod1/l0/tile_07_01.jpg",
+          "bytes": 63010,
+          "sha256": "2669697c6e3d21030628475692e81d8d38a7d43ecad24d2a4146c441bb57563f"
+        },
+        {
+          "column": 8,
+          "row": 1,
+          "path": "earth_lod1/l0/tile_08_01.jpg",
+          "bytes": 72278,
+          "sha256": "255e0618134c5c54e569e7681d00bde331d959c5021c3712f7183497d8f94deb"
+        },
+        {
+          "column": 9,
+          "row": 1,
+          "path": "earth_lod1/l0/tile_09_01.jpg",
+          "bytes": 71043,
+          "sha256": "ef8361521888480f39df2a4e530894e5136cb087aff5c7271389db4482f0a4ea"
+        },
+        {
+          "column": 10,
+          "row": 1,
+          "path": "earth_lod1/l0/tile_10_01.jpg",
+          "bytes": 51188,
+          "sha256": "8e14cef671496afc3f3045e800967e378914ae2af6b1d2c08b7e4c967cfec2b8"
+        },
+        {
+          "column": 11,
+          "row": 1,
+          "path": "earth_lod1/l0/tile_11_01.jpg",
+          "bytes": 27034,
+          "sha256": "bdf7c78ce6e9cd4fe3cb2d6763f6d315257b4f8abb5fa496da7987a385c9dc33"
+        },
+        {
+          "column": 0,
+          "row": 2,
+          "path": "earth_lod1/l0/tile_00_02.jpg",
+          "bytes": 20809,
+          "sha256": "c94e827a1c1f72e52a407ae52f2da6cd367a216330c822ba6f2fce80dcf8d8b8"
+        },
+        {
+          "column": 1,
+          "row": 2,
+          "path": "earth_lod1/l0/tile_01_02.jpg",
+          "bytes": 10967,
+          "sha256": "df31f9cbd607027f7908f033f03f34523cd45d70dba5cbb6f62ace54fe58a8c0"
+        },
+        {
+          "column": 2,
+          "row": 2,
+          "path": "earth_lod1/l0/tile_02_02.jpg",
+          "bytes": 36230,
+          "sha256": "c9f2ea0123d1f3d0e86b7b0e8338c9cf19dc99d3c9543609513374734c72fb8d"
+        },
+        {
+          "column": 3,
+          "row": 2,
+          "path": "earth_lod1/l0/tile_03_02.jpg",
+          "bytes": 46488,
+          "sha256": "806913257370577885fa29b3f5fe6ca1918038c941f23eb76a4525a5d0dbac2c"
+        },
+        {
+          "column": 4,
+          "row": 2,
+          "path": "earth_lod1/l0/tile_04_02.jpg",
+          "bytes": 27365,
+          "sha256": "388fed5a532381db6ad46d9588359dfcd7c9287a930e51b8862b0eaf1401427a"
+        },
+        {
+          "column": 5,
+          "row": 2,
+          "path": "earth_lod1/l0/tile_05_02.jpg",
+          "bytes": 36562,
+          "sha256": "cbe5537b8eacc57f61376199f536597e688c74ea6fdba54740253ddc964fbc93"
+        },
+        {
+          "column": 6,
+          "row": 2,
+          "path": "earth_lod1/l0/tile_06_02.jpg",
+          "bytes": 48878,
+          "sha256": "f8cc32a6cf68c8fa4ef6955921316372b0b376406a13a997b2f18e3d65b6e656"
+        },
+        {
+          "column": 7,
+          "row": 2,
+          "path": "earth_lod1/l0/tile_07_02.jpg",
+          "bytes": 62369,
+          "sha256": "8cf8108444785ca7ca92263c442249e04d67b8a582fec0dfe4b6bb2dabb86f9e"
+        },
+        {
+          "column": 8,
+          "row": 2,
+          "path": "earth_lod1/l0/tile_08_02.jpg",
+          "bytes": 42477,
+          "sha256": "7d966d1ba70231c817f6279f9c9bc5ebf0c341ce16e9b0788f5cf00a32ddd565"
+        },
+        {
+          "column": 9,
+          "row": 2,
+          "path": "earth_lod1/l0/tile_09_02.jpg",
+          "bytes": 55931,
+          "sha256": "40d61ca0c7ac8f8a5754b3b8d65bcf938bf0b46683a6fa9a803e25d795580bab"
+        },
+        {
+          "column": 10,
+          "row": 2,
+          "path": "earth_lod1/l0/tile_10_02.jpg",
+          "bytes": 42021,
+          "sha256": "e56d7e54b9f4aa629b278fbae02680cecd11b7f8d8e8fb486ad6f9ecedc3b3e5"
+        },
+        {
+          "column": 11,
+          "row": 2,
+          "path": "earth_lod1/l0/tile_11_02.jpg",
+          "bytes": 24452,
+          "sha256": "a27a149b341b0563f1ab7db2c01671aa5b8971e29c9dd53f982270fae7c8a016"
+        },
+        {
+          "column": 0,
+          "row": 3,
+          "path": "earth_lod1/l0/tile_00_03.jpg",
+          "bytes": 22143,
+          "sha256": "2adbf988aa139338932a4be5a1c7b4d565779a04c7e7dca46d27819236dbe935"
+        },
+        {
+          "column": 1,
+          "row": 3,
+          "path": "earth_lod1/l0/tile_01_03.jpg",
+          "bytes": 16530,
+          "sha256": "5800b1ee4fdf64df82e1374100feed9bb76b7484bc6a00e43b574cb7e7c5ce0d"
+        },
+        {
+          "column": 2,
+          "row": 3,
+          "path": "earth_lod1/l0/tile_02_03.jpg",
+          "bytes": 15800,
+          "sha256": "5ed6c79ff475f1c6fdc28acf1e4dad561f0f2816fe45991c61fd9a69d85b93dc"
+        },
+        {
+          "column": 3,
+          "row": 3,
+          "path": "earth_lod1/l0/tile_03_03.jpg",
+          "bytes": 41555,
+          "sha256": "09fcf7ccebbde494413c401e4e4da9a7b840c8c16804a0461b0876a705f67907"
+        },
+        {
+          "column": 4,
+          "row": 3,
+          "path": "earth_lod1/l0/tile_04_03.jpg",
+          "bytes": 44339,
+          "sha256": "b971bc02c9905f1c781193d0640be09129398ab1bb4bc636c34001b8f75b3455"
+        },
+        {
+          "column": 5,
+          "row": 3,
+          "path": "earth_lod1/l0/tile_05_03.jpg",
+          "bytes": 21724,
+          "sha256": "d169b7f502db2ce2c12597fc06f75cca269bf85a24e427148d8fb70154873cdc"
+        },
+        {
+          "column": 6,
+          "row": 3,
+          "path": "earth_lod1/l0/tile_06_03.jpg",
+          "bytes": 43494,
+          "sha256": "37281903c7bf867ee65099b0929465188a01b8ff01690cf258dfa638148fd658"
+        },
+        {
+          "column": 7,
+          "row": 3,
+          "path": "earth_lod1/l0/tile_07_03.jpg",
+          "bytes": 41179,
+          "sha256": "f9c677686d3ede678caadccf20417fa92457e9182f792e46df5e5a0c5cf82098"
+        },
+        {
+          "column": 8,
+          "row": 3,
+          "path": "earth_lod1/l0/tile_08_03.jpg",
+          "bytes": 30929,
+          "sha256": "8c65f22172ec048cb7e6555bf9ca59683bed22387dfda5ef59f29e5ea5038c7d"
+        },
+        {
+          "column": 9,
+          "row": 3,
+          "path": "earth_lod1/l0/tile_09_03.jpg",
+          "bytes": 32237,
+          "sha256": "aa0752d25fa033627478b3d88169be04862a46d1db48e253f32cbb0fca6ef4b0"
+        },
+        {
+          "column": 10,
+          "row": 3,
+          "path": "earth_lod1/l0/tile_10_03.jpg",
+          "bytes": 55977,
+          "sha256": "b94801dd4d8167252edca744e9e3d08229ad4ec794c26a2624de0981029f5390"
+        },
+        {
+          "column": 11,
+          "row": 3,
+          "path": "earth_lod1/l0/tile_11_03.jpg",
+          "bytes": 38792,
+          "sha256": "c5f0eb09908d1771e5a8698358b723299a36249901f33617d9eda731eab46df1"
+        },
+        {
+          "column": 0,
+          "row": 4,
+          "path": "earth_lod1/l0/tile_00_04.jpg",
+          "bytes": 12352,
+          "sha256": "f593ea9626449c887e823b8a1c7446a6c8533a27b32a0929bc76408f3a5acdb1"
+        },
+        {
+          "column": 1,
+          "row": 4,
+          "path": "earth_lod1/l0/tile_01_04.jpg",
+          "bytes": 10990,
+          "sha256": "07f472ffcc5158902f84df370ca91ea649923b878399056e0a7a52a8cbf1ce92"
+        },
+        {
+          "column": 2,
+          "row": 4,
+          "path": "earth_lod1/l0/tile_02_04.jpg",
+          "bytes": 12273,
+          "sha256": "a90fa8d85c2d2600134a9d288cdd0315f7eee3cdf3a293bee775bfded0412b8e"
+        },
+        {
+          "column": 3,
+          "row": 4,
+          "path": "earth_lod1/l0/tile_03_04.jpg",
+          "bytes": 40267,
+          "sha256": "1c56fca9c69455ab4468085a7568a52a83bed86430c8556956cb8e396a0d507c"
+        },
+        {
+          "column": 4,
+          "row": 4,
+          "path": "earth_lod1/l0/tile_04_04.jpg",
+          "bytes": 24147,
+          "sha256": "c147ee29a049be362fac115c0e6025a15be3744a0b2e7df3ec21676e39f462c1"
+        },
+        {
+          "column": 5,
+          "row": 4,
+          "path": "earth_lod1/l0/tile_05_04.jpg",
+          "bytes": 27406,
+          "sha256": "ae0ddd1a105251f199ec532fe401db7a4d7a7190a16cf82919c34f387daa00a7"
+        },
+        {
+          "column": 6,
+          "row": 4,
+          "path": "earth_lod1/l0/tile_06_04.jpg",
+          "bytes": 30048,
+          "sha256": "9a264bcb47a740d9f4412e5eeea7f8d0e559d768ecd341b40333c05a00cb4f39"
+        },
+        {
+          "column": 7,
+          "row": 4,
+          "path": "earth_lod1/l0/tile_07_04.jpg",
+          "bytes": 26410,
+          "sha256": "ad7092a55e9e8cbc71b49d0098a2674bbe5bd47d50bb5c749348ae8aaedf39b9"
+        },
+        {
+          "column": 8,
+          "row": 4,
+          "path": "earth_lod1/l0/tile_08_04.jpg",
+          "bytes": 22158,
+          "sha256": "038a32de05ad5d89fa20859064b46338c5d861ba33df60cd4c99c5e3880087c8"
+        },
+        {
+          "column": 9,
+          "row": 4,
+          "path": "earth_lod1/l0/tile_09_04.jpg",
+          "bytes": 18937,
+          "sha256": "8ec64846c341fdf348606e5a22ba9855f65753c8230a9684cc14896bd4da9639"
+        },
+        {
+          "column": 10,
+          "row": 4,
+          "path": "earth_lod1/l0/tile_10_04.jpg",
+          "bytes": 33119,
+          "sha256": "a3f84cff42004c19fdaccd681ccff455eab8519bdb0a6eb30949ecb420d37942"
+        },
+        {
+          "column": 11,
+          "row": 4,
+          "path": "earth_lod1/l0/tile_11_04.jpg",
+          "bytes": 32445,
+          "sha256": "f52c9b2974036614d182c7e37908c89adbc50c64524d771300dc9e5c2edfb0dd"
+        },
+        {
+          "column": 0,
+          "row": 5,
+          "path": "earth_lod1/l0/tile_00_05.jpg",
+          "bytes": 28584,
+          "sha256": "ea387dfe4399fcc42acc2ac3d33440528c18cff1e843df67e87c17c4738ce15c"
+        },
+        {
+          "column": 1,
+          "row": 5,
+          "path": "earth_lod1/l0/tile_01_05.jpg",
+          "bytes": 30421,
+          "sha256": "8e6c7fad730cc77b33c69ba68beda4556b80870772670466425ca246a8e577ea"
+        },
+        {
+          "column": 2,
+          "row": 5,
+          "path": "earth_lod1/l0/tile_02_05.jpg",
+          "bytes": 30316,
+          "sha256": "3832c4b887f80d11c995495f647ec62fd8f6575a4aec5622ca06b0a3570d3e00"
+        },
+        {
+          "column": 3,
+          "row": 5,
+          "path": "earth_lod1/l0/tile_03_05.jpg",
+          "bytes": 44153,
+          "sha256": "ebf73fa9e4d42bd823c2087eaa30edbb58195ba22dce3b803c81a5b7a366c74a"
+        },
+        {
+          "column": 4,
+          "row": 5,
+          "path": "earth_lod1/l0/tile_04_05.jpg",
+          "bytes": 33640,
+          "sha256": "1eef04403854e92f1237a20accc88d035266c762e6f1116419d827a950140600"
+        },
+        {
+          "column": 5,
+          "row": 5,
+          "path": "earth_lod1/l0/tile_05_05.jpg",
+          "bytes": 34634,
+          "sha256": "ba365bd1e8ef2cf5873670cc6c1bb791feedf15e504c2d095c6d2c1100f75391"
+        },
+        {
+          "column": 6,
+          "row": 5,
+          "path": "earth_lod1/l0/tile_06_05.jpg",
+          "bytes": 31450,
+          "sha256": "b41c9ef56e725236f6d5606fce7348c5ddfb5e857f3bac3c5e398d0e4f92018b"
+        },
+        {
+          "column": 7,
+          "row": 5,
+          "path": "earth_lod1/l0/tile_07_05.jpg",
+          "bytes": 31323,
+          "sha256": "1b4669aecf2d153d1e8dfbb73c9940cbaf9c273512e9e64372a58218930f5d97"
+        },
+        {
+          "column": 8,
+          "row": 5,
+          "path": "earth_lod1/l0/tile_08_05.jpg",
+          "bytes": 32863,
+          "sha256": "898a693967631123cf1bdc6c20a6f67e311a53e91802b639dedb3a6136e982cd"
+        },
+        {
+          "column": 9,
+          "row": 5,
+          "path": "earth_lod1/l0/tile_09_05.jpg",
+          "bytes": 27267,
+          "sha256": "16f93c77de1dee4919788090394ae69076d3c348ae7a7dc938cf0342cd6c97bb"
+        },
+        {
+          "column": 10,
+          "row": 5,
+          "path": "earth_lod1/l0/tile_10_05.jpg",
+          "bytes": 33641,
+          "sha256": "fae57ff770507131fc6c9447240811f7ce2628f8fcc61f80f4cd239b24ca2852"
+        },
+        {
+          "column": 11,
+          "row": 5,
+          "path": "earth_lod1/l0/tile_11_05.jpg",
+          "bytes": 52277,
+          "sha256": "4da9f004a0b458882ca3aa35186d3127197b86a45fd394c0de2836fdbe7ba9e9"
+        }
+      ]
+    },
+    {
+      "level": 1,
+      "columns": 12,
+      "rows": 6,
+      "tile_width": 900,
+      "tile_height": 900,
+      "width": 10800,
+      "height": 5400,
+      "pixels_per_degree": 30.0,
+      "tiles": [
+        {
+          "column": 0,
+          "row": 0,
+          "path": "earth_lod1/l1/tile_00_00.jpg",
+          "bytes": 147606,
+          "sha256": "33bb4507ecc23442627ec1191076162c99d3a9d2425a86a255bf2867b7c95ed4"
+        },
+        {
+          "column": 1,
+          "row": 0,
+          "path": "earth_lod1/l1/tile_01_00.jpg",
+          "bytes": 158544,
+          "sha256": "d334bf2ef23a592f378a9c0d8e5f555c4b8fddacf8bbdf4ec19c161b1f481073"
+        },
+        {
+          "column": 2,
+          "row": 0,
+          "path": "earth_lod1/l1/tile_02_00.jpg",
+          "bytes": 229564,
+          "sha256": "5001d0425f21ba823fb11f8356cff3df08f0344be5f41985be72150a05b186e5"
+        },
+        {
+          "column": 3,
+          "row": 0,
+          "path": "earth_lod1/l1/tile_03_00.jpg",
+          "bytes": 217401,
+          "sha256": "decc359df36ad61107b7c84210e3bc2559f396c21b6e3058f584da4d877c281e"
+        },
+        {
+          "column": 4,
+          "row": 0,
+          "path": "earth_lod1/l1/tile_04_00.jpg",
+          "bytes": 109051,
+          "sha256": "29a9f5dae095eb52ff46dd00f5812f4622d64d58b8789c0f6f02198e838372cd"
+        },
+        {
+          "column": 5,
+          "row": 0,
+          "path": "earth_lod1/l1/tile_05_00.jpg",
+          "bytes": 152877,
+          "sha256": "e3fbe4e7e3fd15a1b6c56edf7e703d195d740239040caf1bf652500bf85b2145"
+        },
+        {
+          "column": 6,
+          "row": 0,
+          "path": "earth_lod1/l1/tile_06_00.jpg",
+          "bytes": 154300,
+          "sha256": "db24214a26a75ac8d82f25d18341653e7dc544401137ad0bb2acd460842dbae0"
+        },
+        {
+          "column": 7,
+          "row": 0,
+          "path": "earth_lod1/l1/tile_07_00.jpg",
+          "bytes": 143831,
+          "sha256": "e87b2156ef6826cc41e28153a85d8bf4445a485b1a4ae4df66be93dcab03dd16"
+        },
+        {
+          "column": 8,
+          "row": 0,
+          "path": "earth_lod1/l1/tile_08_00.jpg",
+          "bytes": 184577,
+          "sha256": "d170e4082cff38c555199e9b4cc3b29d8d21a8434776e11f821c9459fb5877d5"
+        },
+        {
+          "column": 9,
+          "row": 0,
+          "path": "earth_lod1/l1/tile_09_00.jpg",
+          "bytes": 184155,
+          "sha256": "d4f7f06c80dd79b707ab55f8f988eb276d210822d778ca6b9888a6c4937a38e4"
+        },
+        {
+          "column": 10,
+          "row": 0,
+          "path": "earth_lod1/l1/tile_10_00.jpg",
+          "bytes": 196239,
+          "sha256": "f3f4564212e021cd1cee6cc87e2404cb73515e8dc800d59bdca2f60be6a38dad"
+        },
+        {
+          "column": 11,
+          "row": 0,
+          "path": "earth_lod1/l1/tile_11_00.jpg",
+          "bytes": 171966,
+          "sha256": "f8c0868c327cc95a01666a96fef5c8edb4ec980f599ad0267174e511737ab5be"
+        },
+        {
+          "column": 0,
+          "row": 1,
+          "path": "earth_lod1/l1/tile_00_01.jpg",
+          "bytes": 54362,
+          "sha256": "e34c955a45df0210114f152688fbfcdd297d29b5bdfd1543663c5355a1b3e844"
+        },
+        {
+          "column": 1,
+          "row": 1,
+          "path": "earth_lod1/l1/tile_01_01.jpg",
+          "bytes": 127139,
+          "sha256": "0713661c4a50f45dca05263ebeb428e05f785595e3ace4474dcbdb0286e5af44"
+        },
+        {
+          "column": 2,
+          "row": 1,
+          "path": "earth_lod1/l1/tile_02_01.jpg",
+          "bytes": 248397,
+          "sha256": "a1b544daf01fc87d268904fd79d24a6b9c2751de221640b449beb0de46e40248"
+        },
+        {
+          "column": 3,
+          "row": 1,
+          "path": "earth_lod1/l1/tile_03_01.jpg",
+          "bytes": 194052,
+          "sha256": "78631e11ba715259f370c40e1f69983b3f6fd8bf6d41d085b329d38b1423af5f"
+        },
+        {
+          "column": 4,
+          "row": 1,
+          "path": "earth_lod1/l1/tile_04_01.jpg",
+          "bytes": 91337,
+          "sha256": "d7f86b78c38f08b86aaf387742a532e13b2cdf40d1ee585a8fb5aca4ddc6925a"
+        },
+        {
+          "column": 5,
+          "row": 1,
+          "path": "earth_lod1/l1/tile_05_01.jpg",
+          "bytes": 139255,
+          "sha256": "286d05d9882775de7923998482e7a33c962b08086594064882d9c2e9c4f9acbb"
+        },
+        {
+          "column": 6,
+          "row": 1,
+          "path": "earth_lod1/l1/tile_06_01.jpg",
+          "bytes": 223780,
+          "sha256": "d4033f1c00b6e6650e942ee3c19dee4120d94475854034694785ac4b939b67d0"
+        },
+        {
+          "column": 7,
+          "row": 1,
+          "path": "earth_lod1/l1/tile_07_01.jpg",
+          "bytes": 230304,
+          "sha256": "2a00e6c5227aedc0f3cfacc990c2c344b28887c6d1d4eee9c897f8f96c82f6c7"
+        },
+        {
+          "column": 8,
+          "row": 1,
+          "path": "earth_lod1/l1/tile_08_01.jpg",
+          "bytes": 269301,
+          "sha256": "3341c267cfdcbffea5ab726128d4a156e599e7adedc95f32dd157a810dfbe4c1"
+        },
+        {
+          "column": 9,
+          "row": 1,
+          "path": "earth_lod1/l1/tile_09_01.jpg",
+          "bytes": 259210,
+          "sha256": "ece25041106a53d5ef8ae62c3e93b2c1f87f7fbc337fb87b81ca9e2a5318290e"
+        },
+        {
+          "column": 10,
+          "row": 1,
+          "path": "earth_lod1/l1/tile_10_01.jpg",
+          "bytes": 174743,
+          "sha256": "0aa4e4ce744e925d132d3faca955a8f7d44f004c4860495f0a8e44e16604a798"
+        },
+        {
+          "column": 11,
+          "row": 1,
+          "path": "earth_lod1/l1/tile_11_01.jpg",
+          "bytes": 79450,
+          "sha256": "0b2410b0a1294aac665c6c8f16b7297bbc130f29efac4a95cd05691cca6cabfd"
+        },
+        {
+          "column": 0,
+          "row": 2,
+          "path": "earth_lod1/l1/tile_00_02.jpg",
+          "bytes": 56385,
+          "sha256": "d70a5cec105523ca7838805c75f8f4bbbe973f40ffb86383ea69c202bc1ec6b0"
+        },
+        {
+          "column": 1,
+          "row": 2,
+          "path": "earth_lod1/l1/tile_01_02.jpg",
+          "bytes": 31311,
+          "sha256": "f15f3bdc0f8a06561ec44337113920d77eed93bc62ae4ebfe45fcc2cc1fd1c83"
+        },
+        {
+          "column": 2,
+          "row": 2,
+          "path": "earth_lod1/l1/tile_02_02.jpg",
+          "bytes": 119640,
+          "sha256": "8ce56cb77ce00a6a69f853176c7b446d9281ea722a97993d4fd5b6a47cf6a86d"
+        },
+        {
+          "column": 3,
+          "row": 2,
+          "path": "earth_lod1/l1/tile_03_02.jpg",
+          "bytes": 153595,
+          "sha256": "cfa2086a85489268130e30ca476e3974b319788d9347a468d8a0da81c3f18cb6"
+        },
+        {
+          "column": 4,
+          "row": 2,
+          "path": "earth_lod1/l1/tile_04_02.jpg",
+          "bytes": 84701,
+          "sha256": "22d0c5e85f17cc5d4bef5a11b9120d6b537d6626f1ab9700be56efeb4cdef9fe"
+        },
+        {
+          "column": 5,
+          "row": 2,
+          "path": "earth_lod1/l1/tile_05_02.jpg",
+          "bytes": 121734,
+          "sha256": "d097e3836950ac8ebdce7c0c449b74504c27c705076c59332101955479eca3f6"
+        },
+        {
+          "column": 6,
+          "row": 2,
+          "path": "earth_lod1/l1/tile_06_02.jpg",
+          "bytes": 173220,
+          "sha256": "6a5c51919be6391c51175e239fdec4af8667712ff587aa65658f16b3ac06ebdd"
+        },
+        {
+          "column": 7,
+          "row": 2,
+          "path": "earth_lod1/l1/tile_07_02.jpg",
+          "bytes": 209012,
+          "sha256": "4b006bc1a4c2a2de42d7b05b11027aef3da0aab5a18095d9473e2d4c9ecd82e7"
+        },
+        {
+          "column": 8,
+          "row": 2,
+          "path": "earth_lod1/l1/tile_08_02.jpg",
+          "bytes": 143990,
+          "sha256": "72d5a6bca0273a043340d61a2c05f3915b7762d7ee3b7a803cd8821a9c4e6e19"
+        },
+        {
+          "column": 9,
+          "row": 2,
+          "path": "earth_lod1/l1/tile_09_02.jpg",
+          "bytes": 193823,
+          "sha256": "58ae09c4ebe8d70a6fcb665bf6229b6a20f1005a28d8db0c23ac8b6dd04c51ff"
+        },
+        {
+          "column": 10,
+          "row": 2,
+          "path": "earth_lod1/l1/tile_10_02.jpg",
+          "bytes": 127359,
+          "sha256": "fdfe0e1ec17b9818b27018cc9148d2456cd383b0def212382359560142bc6839"
+        },
+        {
+          "column": 11,
+          "row": 2,
+          "path": "earth_lod1/l1/tile_11_02.jpg",
+          "bytes": 65740,
+          "sha256": "e9343b4219b180ec4539bdce57009100a605e917e3cc8055cb61e15e066d1c83"
+        },
+        {
+          "column": 0,
+          "row": 3,
+          "path": "earth_lod1/l1/tile_00_03.jpg",
+          "bytes": 60689,
+          "sha256": "47bf0f7f617b132692d8d3573be71a7c8355ae79cd1e22cf2d9403c0d0f6665a"
+        },
+        {
+          "column": 1,
+          "row": 3,
+          "path": "earth_lod1/l1/tile_01_03.jpg",
+          "bytes": 44830,
+          "sha256": "ad91686c8982752673be5d1ad2bc87eee63178aab221e3983bd89430167eacfa"
+        },
+        {
+          "column": 2,
+          "row": 3,
+          "path": "earth_lod1/l1/tile_02_03.jpg",
+          "bytes": 45635,
+          "sha256": "51274b981a7e68ada4d4d3d9a60c52265318773d0a3ca8c717de3e5721023481"
+        },
+        {
+          "column": 3,
+          "row": 3,
+          "path": "earth_lod1/l1/tile_03_03.jpg",
+          "bytes": 145805,
+          "sha256": "1fc66ab6d30ad1699f639b627a20f4031d18000e742e852db1c85427cb542935"
+        },
+        {
+          "column": 4,
+          "row": 3,
+          "path": "earth_lod1/l1/tile_04_03.jpg",
+          "bytes": 164821,
+          "sha256": "aec9323ec6f131b792c792c857e973da0779420ac6461cba9d08a08345c1c147"
+        },
+        {
+          "column": 5,
+          "row": 3,
+          "path": "earth_lod1/l1/tile_05_03.jpg",
+          "bytes": 61865,
+          "sha256": "7a8ba483a3a7dfec2ec8e9764fcc52ba49f8c418fa4e618127da5838c4e10ce8"
+        },
+        {
+          "column": 6,
+          "row": 3,
+          "path": "earth_lod1/l1/tile_06_03.jpg",
+          "bytes": 153023,
+          "sha256": "5959b283fe20143889d2d2b26153ce9d2565f5c2cd31ad27e76af0a165df6835"
+        },
+        {
+          "column": 7,
+          "row": 3,
+          "path": "earth_lod1/l1/tile_07_03.jpg",
+          "bytes": 133042,
+          "sha256": "6ff30cc8831cc05c1ffe4c01100a22934e97e74c7cae81ee94e1ff8c5d243505"
+        },
+        {
+          "column": 8,
+          "row": 3,
+          "path": "earth_lod1/l1/tile_08_03.jpg",
+          "bytes": 94674,
+          "sha256": "52be4be9772c271e44abc4fc7802dee7f73ebaedcfc07ca1ede3b4d4a8bc54dc"
+        },
+        {
+          "column": 9,
+          "row": 3,
+          "path": "earth_lod1/l1/tile_09_03.jpg",
+          "bytes": 98597,
+          "sha256": "41a35a404971a5408d5469fcff93c646227fc5c18a16a5b4c482f9b79be4a856"
+        },
+        {
+          "column": 10,
+          "row": 3,
+          "path": "earth_lod1/l1/tile_10_03.jpg",
+          "bytes": 192135,
+          "sha256": "b6d619cf2e58674acc3cede472df9b44f51d3c7a1c0016110056666a94b40867"
+        },
+        {
+          "column": 11,
+          "row": 3,
+          "path": "earth_lod1/l1/tile_11_03.jpg",
+          "bytes": 111182,
+          "sha256": "1cdaf8e965aaa7bac1f7ab1c1bb669cd670ae94e0d1109d604134960fd988aed"
+        },
+        {
+          "column": 0,
+          "row": 4,
+          "path": "earth_lod1/l1/tile_00_04.jpg",
+          "bytes": 33904,
+          "sha256": "be22c3fd29f7363dea5d5d42ab9195d84be25b709d789f9c0057fd4b95144dc9"
+        },
+        {
+          "column": 1,
+          "row": 4,
+          "path": "earth_lod1/l1/tile_01_04.jpg",
+          "bytes": 29547,
+          "sha256": "95622c6741686f7a507acae0b5d6192180e07aac22726b535c472d901b43b9b5"
+        },
+        {
+          "column": 2,
+          "row": 4,
+          "path": "earth_lod1/l1/tile_02_04.jpg",
+          "bytes": 33396,
+          "sha256": "214b5616db771a8fe501d39dabedebab1c5f3668e22dc4e55cb5449615e6ced6"
+        },
+        {
+          "column": 3,
+          "row": 4,
+          "path": "earth_lod1/l1/tile_03_04.jpg",
+          "bytes": 135415,
+          "sha256": "b2e3dafc2b817653d81bacb9444ab027bd171a1ebf2082246714294b192c8805"
+        },
+        {
+          "column": 4,
+          "row": 4,
+          "path": "earth_lod1/l1/tile_04_04.jpg",
+          "bytes": 70624,
+          "sha256": "fec7b1ad9728ca28e2b4d99a2374faef3801ccae2e586ffc2e83dc0d8f816bce"
+        },
+        {
+          "column": 5,
+          "row": 4,
+          "path": "earth_lod1/l1/tile_05_04.jpg",
+          "bytes": 77071,
+          "sha256": "62ce4f1747225cdc32b18517a00eb41d68fa8638cffdd989e150148ffae433ae"
+        },
+        {
+          "column": 6,
+          "row": 4,
+          "path": "earth_lod1/l1/tile_06_04.jpg",
+          "bytes": 90795,
+          "sha256": "3b198602ffad33c8b25cdde6d5ccf115a5ca4aba40f4a5b223812c96bc969838"
+        },
+        {
+          "column": 7,
+          "row": 4,
+          "path": "earth_lod1/l1/tile_07_04.jpg",
+          "bytes": 78021,
+          "sha256": "febf90bb0720d285c679ae7050ef500f54ac2eab40c7e354ded5b1c03f7ce020"
+        },
+        {
+          "column": 8,
+          "row": 4,
+          "path": "earth_lod1/l1/tile_08_04.jpg",
+          "bytes": 62769,
+          "sha256": "888de93316b8c0defcd6e28906264ec00c162b9b8a142d66b6b66cf1dd714bb2"
+        },
+        {
+          "column": 9,
+          "row": 4,
+          "path": "earth_lod1/l1/tile_09_04.jpg",
+          "bytes": 56663,
+          "sha256": "5a186148ca8b09546729dbeb9ed3198d74338f0e28d2d0730a1c984cf3b37cae"
+        },
+        {
+          "column": 10,
+          "row": 4,
+          "path": "earth_lod1/l1/tile_10_04.jpg",
+          "bytes": 105433,
+          "sha256": "6e9762a8c286b6d70d4815ea8df5926718a6d959579c8cad81046d09274df5c8"
+        },
+        {
+          "column": 11,
+          "row": 4,
+          "path": "earth_lod1/l1/tile_11_04.jpg",
+          "bytes": 94874,
+          "sha256": "3c31b4c0d0b996ae5dea88a9171432a72c451914bb96194c0180ebeaa49ea0e5"
+        },
+        {
+          "column": 0,
+          "row": 5,
+          "path": "earth_lod1/l1/tile_00_05.jpg",
+          "bytes": 90760,
+          "sha256": "6242900f1264e80b78ecd3df2839bc8a54d3f0c384ee15edfd053d52d0eb503e"
+        },
+        {
+          "column": 1,
+          "row": 5,
+          "path": "earth_lod1/l1/tile_01_05.jpg",
+          "bytes": 107105,
+          "sha256": "da195df8e6559cc419ee4c1cd891a78377852cd036487d360f118f7b31595f75"
+        },
+        {
+          "column": 2,
+          "row": 5,
+          "path": "earth_lod1/l1/tile_02_05.jpg",
+          "bytes": 107881,
+          "sha256": "28872f9dd1808ef2d15a1afbc14c45ca017fa1285aa3c97cccc90848e48e55fe"
+        },
+        {
+          "column": 3,
+          "row": 5,
+          "path": "earth_lod1/l1/tile_03_05.jpg",
+          "bytes": 154238,
+          "sha256": "bb3f1bc31c417834d10860f79076285de07377c6ff70838101b3beb478daa213"
+        },
+        {
+          "column": 4,
+          "row": 5,
+          "path": "earth_lod1/l1/tile_04_05.jpg",
+          "bytes": 109632,
+          "sha256": "2ed5e3898dbdfe7ad9e18d878853cf7ed3203185c62e569580550f97006c74a8"
+        },
+        {
+          "column": 5,
+          "row": 5,
+          "path": "earth_lod1/l1/tile_05_05.jpg",
+          "bytes": 121457,
+          "sha256": "b705c67fbb807d174cdd1e76fa878dfcb147c92b6f04829bef3b0fdf6a905ac7"
+        },
+        {
+          "column": 6,
+          "row": 5,
+          "path": "earth_lod1/l1/tile_06_05.jpg",
+          "bytes": 108150,
+          "sha256": "3a3afe7753abdc179adcae0b794132025ecab795ac446e9990574dfe71bdf521"
+        },
+        {
+          "column": 7,
+          "row": 5,
+          "path": "earth_lod1/l1/tile_07_05.jpg",
+          "bytes": 109825,
+          "sha256": "d44c83bcb1e4b44a7e623a36d986d3f38e08a3dbec8357117a0aeeeefb5b1af9"
+        },
+        {
+          "column": 8,
+          "row": 5,
+          "path": "earth_lod1/l1/tile_08_05.jpg",
+          "bytes": 121557,
+          "sha256": "1e336be8fd39837fa28be0dbe8e2c12eb52ce7e34997ed20385a6b3bacde2210"
+        },
+        {
+          "column": 9,
+          "row": 5,
+          "path": "earth_lod1/l1/tile_09_05.jpg",
+          "bytes": 98503,
+          "sha256": "72e77af45dcbbc3c93124b7c35abf02e6d92cc990ab9f24f65498276e59d6127"
+        },
+        {
+          "column": 10,
+          "row": 5,
+          "path": "earth_lod1/l1/tile_10_05.jpg",
+          "bytes": 122560,
+          "sha256": "f530e769af26bf09cd167a423ca954cc93afc61f98d42bdb7d43794dfd94eab6"
+        },
+        {
+          "column": 11,
+          "row": 5,
+          "path": "earth_lod1/l1/tile_11_05.jpg",
+          "bytes": 177679,
+          "sha256": "b58914fc5bc1b843703343d9359ff1d7cb2159344be86225809d255fec887bbb"
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "columns": 12,
+      "rows": 6,
+      "tile_width": 1800,
+      "tile_height": 1800,
+      "width": 21600,
+      "height": 10800,
+      "pixels_per_degree": 60.0,
+      "tiles": [
+        {
+          "column": 0,
+          "row": 0,
+          "path": "earth_lod1/tile_00_00.jpg",
+          "bytes": 449969,
+          "sha256": "65eb2dda64aa37901835ee0237a593d89e6944178c9a6d557f2b3cd06ee04067"
+        },
+        {
+          "column": 1,
+          "row": 0,
+          "path": "earth_lod1/tile_00_01.jpg",
+          "bytes": 479910,
+          "sha256": "57ae7b455e371c512af8c5912b957f8eaf6f73d1581b2d6a0386503c11e1d34f"
+        },
+        {
+          "column": 2,
+          "row": 0,
+          "path": "earth_lod1/tile_00_02.jpg",
+          "bytes": 655214,
+          "sha256": "4b8d1fd9161df833c2941d49dc3bd390f8bcca1721ee1c3ad868aaf57af043d7"
+        },
+        {
+          "column": 3,
+          "row": 0,
+          "path": "earth_lod1/tile_00_03.jpg",
+          "bytes": 610520,
+          "sha256": "2b15a0664c47b917c0599645f6138b95fcab0431edc0cc072b554559b895e3a8"
+        },
+        {
+          "column": 4,
+          "row": 0,
+          "path": "earth_lod1/tile_00_04.jpg",
+          "bytes": 297343,
+          "sha256": "ea064e3318a88fe60cc13ed07e8f9075a499a4b1fc0293481b7f9765a577fc47"
+        },
+        {
+          "column": 5,
+          "row": 0,
+          "path": "earth_lod1/tile_00_05.jpg",
+          "bytes": 420087,
+          "sha256": "4856691c599f39266008c7f3477635706d4a78334febbc7615f74a4d9d439e69"
+        },
+        {
+          "column": 6,
+          "row": 0,
+          "path": "earth_lod1/tile_00_06.jpg",
+          "bytes": 458734,
+          "sha256": "f3a602db16c9078f5ae1db8821c0ba3f2697c2931a7503274e8019de5883aacd"
+        },
+        {
+          "column": 7,
+          "row": 0,
+          "path": "earth_lod1/tile_00_07.jpg",
+          "bytes": 444948,
+          "sha256": "bae6fd74cd96aa2409cc3711d6c70bdf3f94c311888b8f1114af86a0a429d387"
+        },
+        {
+          "column": 8,
+          "row": 0,
+          "path": "earth_lod1/tile_00_08.jpg",
+          "bytes": 569646,
+          "sha256": "b36cb2f87ed77ebd9df160fa64b659afd34a9bbe70e96971ce4131cb17a35f27"
+        },
+        {
+          "column": 9,
+          "row": 0,
+          "path": "earth_lod1/tile_00_09.jpg",
+          "bytes": 559636,
+          "sha256": "aea252cb8b1d60d3d894d82c96fdf2966b76e1511b607499a4de62bb310e5eb2"
+        },
+        {
+          "column": 10,
+          "row": 0,
+          "path": "earth_lod1/tile_00_10.jpg",
+          "bytes": 617825,
+          "sha256": "4a61681d2f076d17821f176a3f8a3306cba8d8823a312fb8b7438b6a329afed2"
+        },
+        {
+          "column": 11,
+          "row": 0,
+          "path": "earth_lod1/tile_00_11.jpg",
+          "bytes": 541983,
+          "sha256": "93f9c42bc160815b12e4a59fc343f256a18a3b8932910cdeb8b93a971c0f407c"
+        },
+        {
+          "column": 0,
+          "row": 1,
+          "path": "earth_lod1/tile_01_00.jpg",
+          "bytes": 142746,
+          "sha256": "103a0c5a6d29d9b026f588a9135646dca6a3ae3cff523ec0e8b45651d906b3fe"
+        },
+        {
+          "column": 1,
+          "row": 1,
+          "path": "earth_lod1/tile_01_01.jpg",
+          "bytes": 371777,
+          "sha256": "4dd0e7f694d64719dcc902b34dff427f2cfd079023216b86b451e6957b26dc0f"
+        },
+        {
+          "column": 2,
+          "row": 1,
+          "path": "earth_lod1/tile_01_02.jpg",
+          "bytes": 813195,
+          "sha256": "5dd65ee3ee8ce0094c55204a50302a2e7ff6e368901cfdcee83651cd3087bfab"
+        },
+        {
+          "column": 3,
+          "row": 1,
+          "path": "earth_lod1/tile_01_03.jpg",
+          "bytes": 620113,
+          "sha256": "89f77eae4513aa981d2361544ab90bb96d665f9a8e6a579d0c08ebb701fe9b81"
+        },
+        {
+          "column": 4,
+          "row": 1,
+          "path": "earth_lod1/tile_01_04.jpg",
+          "bytes": 244546,
+          "sha256": "7bc5241273d087408aa891c290b009c340226f464a7c6ed2287c0cca7d034eda"
+        },
+        {
+          "column": 5,
+          "row": 1,
+          "path": "earth_lod1/tile_01_05.jpg",
+          "bytes": 394953,
+          "sha256": "b90a43ee5de7964ce25392dba38712e992917111ae8630d1abc6415ba8be1b06"
+        },
+        {
+          "column": 6,
+          "row": 1,
+          "path": "earth_lod1/tile_01_06.jpg",
+          "bytes": 703190,
+          "sha256": "53cc63bc6bf3dc030805382f37fdf511d52510125516be8034f1eb2a9c21f50b"
+        },
+        {
+          "column": 7,
+          "row": 1,
+          "path": "earth_lod1/tile_01_07.jpg",
+          "bytes": 734139,
+          "sha256": "058417a8d3309180c122a0976918558ae55d7f3a1796b80da5dc8c3e571880fa"
+        },
+        {
+          "column": 8,
+          "row": 1,
+          "path": "earth_lod1/tile_01_08.jpg",
+          "bytes": 874071,
+          "sha256": "c8816da4190639a2e20d02b8ee66cca312198352332e9a3c9a59f2be15d3d461"
+        },
+        {
+          "column": 9,
+          "row": 1,
+          "path": "earth_lod1/tile_01_09.jpg",
+          "bytes": 839062,
+          "sha256": "d5199870b563e1ce8aa92915784104447f8de8b4b94dc543e5164a9f2d2cc92b"
+        },
+        {
+          "column": 10,
+          "row": 1,
+          "path": "earth_lod1/tile_01_10.jpg",
+          "bytes": 538992,
+          "sha256": "3b2b62a7cfaa7bbbe1bef61826fd84d9f99865fef1657fc109bec657b441deeb"
+        },
+        {
+          "column": 11,
+          "row": 1,
+          "path": "earth_lod1/tile_01_11.jpg",
+          "bytes": 207308,
+          "sha256": "7e958aeb8b0d64438464a95031702c5992798c8a84319979e32d278ce0e8f385"
+        },
+        {
+          "column": 0,
+          "row": 2,
+          "path": "earth_lod1/tile_02_00.jpg",
+          "bytes": 133757,
+          "sha256": "fa1498eae356eb2d9b56cc29cf4bb3f5752ce6114f56373aa9fa705a5a632478"
+        },
+        {
+          "column": 1,
+          "row": 2,
+          "path": "earth_lod1/tile_02_01.jpg",
+          "bytes": 80176,
+          "sha256": "10825160d2efc663e9f677aea84029d7053daf766b6eba979aa044efe0bcd7db"
+        },
+        {
+          "column": 2,
+          "row": 2,
+          "path": "earth_lod1/tile_02_02.jpg",
+          "bytes": 343224,
+          "sha256": "81ad3b39f06ad8a5e622fbd7938d67e978a0f591d9cb236c0b86201427988eca"
+        },
+        {
+          "column": 3,
+          "row": 2,
+          "path": "earth_lod1/tile_02_03.jpg",
+          "bytes": 450750,
+          "sha256": "6bd29f150a8a21e17162127c87858611ce929175167efcb20900a238fdd3c39b"
+        },
+        {
+          "column": 4,
+          "row": 2,
+          "path": "earth_lod1/tile_02_04.jpg",
+          "bytes": 222173,
+          "sha256": "11a1d3c5262f787fb0b46d1fb53293caaf570b203376f685d976ebd3f2aaca26"
+        },
+        {
+          "column": 5,
+          "row": 2,
+          "path": "earth_lod1/tile_02_05.jpg",
+          "bytes": 355424,
+          "sha256": "c599830f3be7ff484767327eeb6764732b8a7b1e54fa01811665f8f3df69b34e"
+        },
+        {
+          "column": 6,
+          "row": 2,
+          "path": "earth_lod1/tile_02_06.jpg",
+          "bytes": 532704,
+          "sha256": "8ec0ac8cfb992b386b64318065c22590e0ecb0eb299337b2fc441cef53483138"
+        },
+        {
+          "column": 7,
+          "row": 2,
+          "path": "earth_lod1/tile_02_07.jpg",
+          "bytes": 620210,
+          "sha256": "f74c5a44af84d23959f15322d0ef0ad94f93b78a44ba95ee059efae6bff0383c"
+        },
+        {
+          "column": 8,
+          "row": 2,
+          "path": "earth_lod1/tile_02_08.jpg",
+          "bytes": 433679,
+          "sha256": "d8d493643582762c03fccd98ac3f35a866ddbaa02334cacb98c607ca8ec198ef"
+        },
+        {
+          "column": 9,
+          "row": 2,
+          "path": "earth_lod1/tile_02_09.jpg",
+          "bytes": 604153,
+          "sha256": "ab14864fca70270e4537625330f3874c5234b0c6485636cdff279136bd63573c"
+        },
+        {
+          "column": 10,
+          "row": 2,
+          "path": "earth_lod1/tile_02_10.jpg",
+          "bytes": 328922,
+          "sha256": "13227dc42e88fbaf7594f6471297125496b28211a949877ae836b371b2a85be4"
+        },
+        {
+          "column": 11,
+          "row": 2,
+          "path": "earth_lod1/tile_02_11.jpg",
+          "bytes": 157589,
+          "sha256": "8e3964a9789e71d2e3d715e207009fb614f199ab63d628083660fb4330baa75f"
+        },
+        {
+          "column": 0,
+          "row": 3,
+          "path": "earth_lod1/tile_03_00.jpg",
+          "bytes": 146426,
+          "sha256": "33443ff346e96be9075c8867c849765e1ab164b75d3ef739a5d5df74687de7fd"
+        },
+        {
+          "column": 1,
+          "row": 3,
+          "path": "earth_lod1/tile_03_01.jpg",
+          "bytes": 109720,
+          "sha256": "9a50b6afff9e8433f46a7d4d8ad953651d66c50ef68c0da24903c84c8ec25309"
+        },
+        {
+          "column": 2,
+          "row": 3,
+          "path": "earth_lod1/tile_03_02.jpg",
+          "bytes": 114589,
+          "sha256": "f351ca2d485c90e71a17246d6a5962339ab4ef9b5abd9542fc3926af413471ec"
+        },
+        {
+          "column": 3,
+          "row": 3,
+          "path": "earth_lod1/tile_03_03.jpg",
+          "bytes": 454054,
+          "sha256": "91f5bf0560b881c2687d98f4d2eda5320bcaed7f0b124ec4021bb90956d72857"
+        },
+        {
+          "column": 4,
+          "row": 3,
+          "path": "earth_lod1/tile_03_04.jpg",
+          "bytes": 545148,
+          "sha256": "b477d3554a6d999ede89c21760a669ab8288e13f1eff2ab5247b5144c780938e"
+        },
+        {
+          "column": 5,
+          "row": 3,
+          "path": "earth_lod1/tile_03_05.jpg",
+          "bytes": 152547,
+          "sha256": "d81d9c4ae84e1c6f448c9ee6f897b0a2f1703db098f2f5616443467bf5cb430e"
+        },
+        {
+          "column": 6,
+          "row": 3,
+          "path": "earth_lod1/tile_03_06.jpg",
+          "bytes": 480212,
+          "sha256": "67d54173803c9a7b25b9a25277cc4812bb89c5382e3c541fdaf21e355e4823f6"
+        },
+        {
+          "column": 7,
+          "row": 3,
+          "path": "earth_lod1/tile_03_07.jpg",
+          "bytes": 385273,
+          "sha256": "3cc070635524434c59eddb28b92504a02ccae1d4c0d14f6342fc7a78abdfd684"
+        },
+        {
+          "column": 8,
+          "row": 3,
+          "path": "earth_lod1/tile_03_08.jpg",
+          "bytes": 240326,
+          "sha256": "2a3fa19cb0316a5d7dfffe864718d868f679836276ea2cb7e9d88e960f7bf2e7"
+        },
+        {
+          "column": 9,
+          "row": 3,
+          "path": "earth_lod1/tile_03_09.jpg",
+          "bytes": 266419,
+          "sha256": "6216419ad3d5ea54bcaf318b988e178e1de91ce7d7325a6825cb7e831050acfc"
+        },
+        {
+          "column": 10,
+          "row": 3,
+          "path": "earth_lod1/tile_03_10.jpg",
+          "bytes": 579318,
+          "sha256": "a316fa8885238e9f8286ddb8a9511c95fa0c766d9ca1c3fd783cf2630f28f03a"
+        },
+        {
+          "column": 11,
+          "row": 3,
+          "path": "earth_lod1/tile_03_11.jpg",
+          "bytes": 280114,
+          "sha256": "8c85353c76db004e698e4ea108a428fb5930f1b3e879a735329642051a8548dd"
+        },
+        {
+          "column": 0,
+          "row": 4,
+          "path": "earth_lod1/tile_04_00.jpg",
+          "bytes": 82868,
+          "sha256": "e6dcca4b3b08ba0aee7e81d6c5cee2fe173aaf701efa4e89d09d09140de4ab0c"
+        },
+        {
+          "column": 1,
+          "row": 4,
+          "path": "earth_lod1/tile_04_01.jpg",
+          "bytes": 74235,
+          "sha256": "231b8e68e5e24f1a81d40bf533a29cb1cbd05949823b78de5057a3cc4284f23d"
+        },
+        {
+          "column": 2,
+          "row": 4,
+          "path": "earth_lod1/tile_04_02.jpg",
+          "bytes": 82471,
+          "sha256": "1ede5ef45720b67efd2a6bdafed1f679c75a542d134f45665edcf684031369ea"
+        },
+        {
+          "column": 3,
+          "row": 4,
+          "path": "earth_lod1/tile_04_03.jpg",
+          "bytes": 405356,
+          "sha256": "b28e6e4be7a8f14dda7d2ffac540f88d41d531624e830313fe6598dc323e5545"
+        },
+        {
+          "column": 4,
+          "row": 4,
+          "path": "earth_lod1/tile_04_04.jpg",
+          "bytes": 181604,
+          "sha256": "3b595711f6d5396787791701e3710e299ee8c9632c81b87bcfb06ba22f240db4"
+        },
+        {
+          "column": 5,
+          "row": 4,
+          "path": "earth_lod1/tile_04_05.jpg",
+          "bytes": 188092,
+          "sha256": "66eb4e4b110796f8ce24cd0a23dfe3cd9de001573c1908db41d7193e27c42ff6"
+        },
+        {
+          "column": 6,
+          "row": 4,
+          "path": "earth_lod1/tile_04_06.jpg",
+          "bytes": 237960,
+          "sha256": "20069006899087a7474786730189a2303b8e1e0006668471389ef101248f5e04"
+        },
+        {
+          "column": 7,
+          "row": 4,
+          "path": "earth_lod1/tile_04_07.jpg",
+          "bytes": 194341,
+          "sha256": "6e28212b51731e438868700532c42ddf94b6a8742075d9293d6f048bbf172b66"
+        },
+        {
+          "column": 8,
+          "row": 4,
+          "path": "earth_lod1/tile_04_08.jpg",
+          "bytes": 152439,
+          "sha256": "7c55c3c6ee5f1236c68eddb2a8a1844513a97a263163da212a12112c67ddc635"
+        },
+        {
+          "column": 9,
+          "row": 4,
+          "path": "earth_lod1/tile_04_09.jpg",
+          "bytes": 147734,
+          "sha256": "d20536b55b1c7eb6c31bcf513d3c53d46e2df3a87342ffbdf87d5687bbfb3ae5"
+        },
+        {
+          "column": 10,
+          "row": 4,
+          "path": "earth_lod1/tile_04_10.jpg",
+          "bytes": 291648,
+          "sha256": "2919f10e431c2f87a5b0e9adf1ebe2709084aa26a0beb73c12969fdae0e7bc47"
+        },
+        {
+          "column": 11,
+          "row": 4,
+          "path": "earth_lod1/tile_04_11.jpg",
+          "bytes": 245757,
+          "sha256": "43eb6c0d7450d5c51450f2255dc8d17c7ff9cc5b1c7bc001ad115b9730ccfe95"
+        },
+        {
+          "column": 0,
+          "row": 5,
+          "path": "earth_lod1/tile_05_00.jpg",
+          "bytes": 266398,
+          "sha256": "da463ce7c87349f1094d5fa84ec60aef9015d49a51366519ca93345abaf738cc"
+        },
+        {
+          "column": 1,
+          "row": 5,
+          "path": "earth_lod1/tile_05_01.jpg",
+          "bytes": 349357,
+          "sha256": "3bffe6fb6590207eac1f65742e73ab6e201c19ea972a90d789d738ed6d3fe87e"
+        },
+        {
+          "column": 2,
+          "row": 5,
+          "path": "earth_lod1/tile_05_02.jpg",
+          "bytes": 337860,
+          "sha256": "457813dbdc94f88a139c546f334067f804dfa8ffbe90405c754ad8ddfced65e4"
+        },
+        {
+          "column": 3,
+          "row": 5,
+          "path": "earth_lod1/tile_05_03.jpg",
+          "bytes": 473731,
+          "sha256": "edb4f12f2c8837ad7dfebe41cf8cb3de903053bc754709442b654ceeabec4ea4"
+        },
+        {
+          "column": 4,
+          "row": 5,
+          "path": "earth_lod1/tile_05_04.jpg",
+          "bytes": 310240,
+          "sha256": "5d3c6862499ff08e431b2b57c0178994f1e4c3a28afdb3496785aae2db399e36"
+        },
+        {
+          "column": 5,
+          "row": 5,
+          "path": "earth_lod1/tile_05_05.jpg",
+          "bytes": 353129,
+          "sha256": "147bad79d4c757998ebefe518636cb0039faa5fd94e71015edebd863716d0181"
+        },
+        {
+          "column": 6,
+          "row": 5,
+          "path": "earth_lod1/tile_05_06.jpg",
+          "bytes": 309275,
+          "sha256": "39f5c41b6da6b8420a0cc7c390a558c5f418baacaee4fea989c6ca370d7b67de"
+        },
+        {
+          "column": 7,
+          "row": 5,
+          "path": "earth_lod1/tile_05_07.jpg",
+          "bytes": 324435,
+          "sha256": "0041b4beefbd53f5abe09dbec6be28a3c486f5bc4dca7fc6431e70fe1e633141"
+        },
+        {
+          "column": 8,
+          "row": 5,
+          "path": "earth_lod1/tile_05_08.jpg",
+          "bytes": 368840,
+          "sha256": "f3afa97d9ffb0f9ca03a906e0b159ff7dd6a697c14a5a847118534eb8d4446e2"
+        },
+        {
+          "column": 9,
+          "row": 5,
+          "path": "earth_lod1/tile_05_09.jpg",
+          "bytes": 292230,
+          "sha256": "67760a46297825e0411f39c2e27ecde402eb7904b9f4d6655289a793541042bd"
+        },
+        {
+          "column": 10,
+          "row": 5,
+          "path": "earth_lod1/tile_05_10.jpg",
+          "bytes": 369390,
+          "sha256": "0215c4c61e58809a04f1985e82ab7c927ce069f86d19abcc64919316edd91bb7"
+        },
+        {
+          "column": 11,
+          "row": 5,
+          "path": "earth_lod1/tile_05_11.jpg",
+          "bytes": 522713,
+          "sha256": "ce71dfb090724f6e79ac1c986ce5f2070df43998a53a9760dd47118e9e32022d"
+        }
+      ]
+    }
+  ],
+  "optional_levels": [
+    {
+      "level": 3,
+      "installed": false,
+      "pack": "nasa_blue_marble_500m",
+      "label": "NASA Blue Marble 500 m",
+      "pixels_per_degree": 240.0,
+      "approximate_download_bytes": 426353871,
+      "approximate_disk_bytes": 339155255,
+      "install_command": "python3 earth_texture_500m.py --install",
+      "uninstall_command": "python3 earth_texture_500m.py --uninstall"
+    }
+  ]
+}

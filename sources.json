@@ -1,0 +1,264 @@
+{
+  "schema_version": "uap.source_registry.v1",
+  "atlas_path": "../qagain_loop/docs/GLOBAL_UAP_USO_SOURCE_ATLAS_20260813_ZH.md",
+  "sources": [
+    {
+      "id": "uapdrop",
+      "name": "UAPDrop open sightings CSV",
+      "access": "OPEN_BATCH",
+      "kind": "uapdrop_csv",
+      "url": "https://www.uapdrop.com/rest/v1/public/sightings.csv",
+      "portal_url": "https://www.uapdrop.com/data.html",
+      "role": "reported_sightings",
+      "expected_bytes_per_run": 12000000,
+      "max_response_bytes": 33554432,
+      "requests_per_run": 1,
+      "refresh_hint": "weekly"
+    },
+    {
+      "id": "uap_observatory",
+      "name": "UAP Observatory incidents CSV",
+      "access": "OPEN_BATCH",
+      "kind": "uap_observatory_csv",
+      "url": "https://uapobservatory.org/downloads/incidents.csv",
+      "portal_url": "https://uapobservatory.org/",
+      "role": "curated_incidents",
+      "expected_bytes_per_run": 65536,
+      "max_response_bytes": 4194304,
+      "requests_per_run": 1,
+      "refresh_hint": "weekly"
+    },
+    {
+      "id": "nasa_fireball",
+      "name": "NASA/JPL CNEOS Fireball Data API",
+      "access": "OPEN_BATCH",
+      "kind": "nasa_fireball_json",
+      "url": "https://ssd-api.jpl.nasa.gov/fireball.api?req-loc=true",
+      "portal_url": "https://ssd-api.jpl.nasa.gov/doc/fireball.html",
+      "role": "false_positive_control",
+      "expected_bytes_per_run": 65536,
+      "max_response_bytes": 4194304,
+      "requests_per_run": 1,
+      "refresh_hint": "monthly"
+    },
+    {
+      "id": "nasa_horizons_9_bodies",
+      "name": "NASA/JPL Horizons historical nine-planet ephemerides",
+      "access": "OPEN_BATCH",
+      "kind": "nasa_horizons_planets",
+      "url": "https://ssd.jpl.nasa.gov/api/horizons.api",
+      "portal_url": "https://ssd.jpl.nasa.gov/horizons/",
+      "role": "astronomy_control",
+      "expected_bytes_per_run": 100000,
+      "max_response_bytes": 1048576,
+      "requests_per_run": 9,
+      "refresh_hint": "daily"
+    },
+    {
+      "id": "nara_uap_bulk",
+      "name": "US National Archives UAP bulk catalogue",
+      "access": "METADATA_BATCH_REVIEW",
+      "url": "https://www.archives.gov/research/catalog/catalog-bulk-downloads/uap-bulk-download",
+      "role": "official_documents",
+      "kind": "nara_metadata_catalogue",
+      "admission_state": "LOCAL_MANIFEST_PARSER_READY_REMOTE_INDEX_COLLECTION_PENDING",
+      "metadata_pattern": "https://catalog.archives.gov/medialz/bulk-downloads/uaps/JSON/catalog-export-<NAID>.json",
+      "update_hint": "at_least_three_times_per_year",
+      "full_media_policy": "metadata_only_until_explicit_release_selection",
+      "notes": "The official catalogue links metadata JSON separately from very large ZIP media bundles."
+    },
+    {
+      "id": "war_gov_uap",
+      "name": "US Department of War PURSUE UAP release index",
+      "access": "METADATA_BATCH_REVIEW",
+      "url": "https://www.war.gov/Portals/1/Interactive/2026/UFO/uap-csv.csv",
+      "portal_url": "https://www.war.gov/UFO/",
+      "role": "official_documents",
+      "kind": "war_gov_uap_release_index",
+      "admission_state": "CONNECTOR_PENDING",
+      "full_media_policy": "release_manifest_first_no_document_or_video_bulk",
+      "notes": "Official release portal contains both searchable records and multi-GB document/video bundles; retain a manifest before any selected file acquisition."
+    },
+    {
+      "id": "geipan_cases_witnesses_csv",
+      "name": "CNES GEIPAN official cases and witness-observations CSV",
+      "access": "OPEN_BATCH_REVIEW",
+      "url": "https://www.cnes-geipan.fr/en/actualites/mise-a-jour-csv",
+      "role": "official_cases",
+      "kind": "geipan_relational_csv",
+      "admission_state": "LOCAL_HEADER_CONTRACT_READY_RELATIONAL_NORMALIZER_PENDING",
+      "download_urls": [
+        "https://www.cnes-geipan.fr/sites/default/files/Base_de_donn%C3%A9es_des_cas.csv",
+        "https://www.cnes-geipan.fr/sites/default/files/Base_de_donn%C3%A9es_des_t%C3%A9moignages.csv"
+      ],
+      "schema_documentation_url": "https://www.cnes-geipan.fr/sites/default/files/Description_des_tables_et_champs_de_donn%C3%A9es_de_la_base_du_geipan_2019-01-07.xlsx",
+      "privacy_note": "Published coordinates are rounded to 0.1 degree and witness-related data are anonymized/filtered; local header inspection checks the relation contract before any row import.",
+      "redistribution_status": "not_stated_in_source_page"
+    },
+    {
+      "id": "spain_defense_ufo_files",
+      "name": "Spain Ministry of Defence declassified UFO files",
+      "access": "METADATA_BATCH_REVIEW",
+      "url": "https://bibliotecavirtual.defensa.gob.es/BVMDefensa/exp_ovni/es/micrositios/inicio.do",
+      "portal_url": "https://bibliotecavirtual.defensa.gob.es/BVMDefensa/exp_ovni/en/consulta/busqueda.do",
+      "role": "official_documents",
+      "kind": "spain_defense_mets_manifest",
+      "admission_state": "LOCAL_METS_MANIFEST_PARSER_READY_ACCESS_CONTRACT_PENDING",
+      "record_count_note": "Official presentation describes 80 declassified files / approximately 1,900 pages covering Spanish airspace incidents from 1962 to 1995.",
+      "metadata_capability_note": "Individual catalogue pages expose a Download METS action; the anonymous endpoint returned HTTP 403 during admission research, so endpoint behavior and permitted catalogue traversal remain unverified.",
+      "license": "CC-BY-4.0-on-individual-digital-copies-with-required-attribution",
+      "full_media_policy": "metadata_manifest_first_no_page_image_bulk"
+    },
+    {
+      "id": "ufosint_public_sqlite",
+      "name": "UFOSINT unified public sightings SQLite export",
+      "access": "OPEN_BATCH_REVIEW",
+      "url": "https://github.com/UFOSINT/ufosint-explorer/releases/latest/download/ufo_public.db",
+      "portal_url": "https://github.com/UFOSINT/ufo-dedup",
+      "role": "global_deduplicated_sightings",
+      "kind": "ufosint_public_sqlite",
+      "admission_state": "LOCAL_ADAPTER_READY_STREAMING_AND_LICENSE_ADMISSION_PENDING",
+      "expected_bytes_per_run": 600000000,
+      "max_response_bytes": 1073741824,
+      "requests_per_run": 1,
+      "privacy_note": "The documented public export strips long narratives and raw JSON; the local adapter additionally omits witness fields and rounds map coordinates to 0.1 degree before any derived export.",
+      "redistribution_status": "repository_license_not_found_at_admission",
+      "deduplication_note": "This is an aggregator-derived view; retain source_db_id/source_record_id/origin provenance and never count it in addition to its upstream feeds."
+    },
+    {
+      "id": "phenomainon_research",
+      "name": "Phenomainon research MCP/API",
+      "access": "OPEN_QUERY",
+      "url": "https://research.phenomainon.com/api",
+      "portal_url": "https://www.phenomainon.com/about/sources",
+      "role": "aggregated_deduplication_reference",
+      "kind": "phenomainon_mcp_query",
+      "admission_state": "LOCAL_BOUNDED_QUERY_PLAN_READY_RESEARCH_KEY_SCOPE_PENDING",
+      "record_count_note": "API documentation described a 252K-event corpus at admission; treat the count as provider-reported and time-varying.",
+      "access_note": "MCP/API uses X-API-Key. Anonymous access is rate-limited; vetted free researcher access is documented for non-commercial research, journalism and education.",
+      "redistribution_status": "provider compilation/normalization is proprietary; legal page permits non-commercial API/MCP use but does not grant a bulk mirror license",
+      "deduplication_note": "Every event preserves upstream citations. Use only for candidate discovery/corroboration and never add its event count to its listed upstream catalogs."
+    },
+    {
+      "id": "global_meteor_network_meteor",
+      "name": "Global Meteor Network meteor trajectories",
+      "access": "OPEN_BATCH_REVIEW",
+      "url": "https://explore.globalmeteornetwork.org/gmn_data_store/meteor",
+      "portal_url": "https://explore.globalmeteornetwork.org/",
+      "role": "false_positive_control",
+      "kind": "datasette_incremental_meteor",
+      "admission_state": "LOCAL_INCREMENTAL_PLAN_READY_ENDPOINT_PROBE_PENDING",
+      "license": "CC-BY-4.0",
+      "coverage_note": "Meteor trajectories include beginning time and start/end latitude/longitude; a local plan constrains an approved future collector to a 31-day, composite-cursor page rather than an unbounded full-table request."
+    },
+    {
+      "id": "nuforc",
+      "name": "National UFO Reporting Center",
+      "access": "OPEN_QUERY",
+      "url": "https://nuforc.org/databank/",
+      "role": "first_hand_reports"
+    },
+    {
+      "id": "ufobua",
+      "name": "National UFO Archive of Ukraine",
+      "access": "OPEN_QUERY",
+      "url": "https://ufobua.org.ua/",
+      "role": "first_hand_reports",
+      "api_documentation_url": "https://ufobua.org.ua/api/index.php",
+      "admission_state": "EXTERNAL_MAP_API_SCOPE_AND_PERMISSION_PENDING",
+      "notes": "The public API page documents an external map widget that loads current archive data; it is not yet evidence of a licensed bulk-export contract."
+    },
+    {
+      "id": "ufoseti",
+      "name": "UfoSeti public map and API",
+      "access": "OPEN_QUERY",
+      "url": "https://ufoseti.org/",
+      "role": "first_hand_reports",
+      "api_documentation_url": "https://ufoseti.org/ru/api/desc",
+      "api_protocol_note": "Published API examples use HTTP JSON/XML endpoints; do not auto-collect until transport, terms, pagination, and privacy scope are rechecked."
+    },
+    {
+      "id": "afu",
+      "name": "Archives for the Unexplained",
+      "access": "ARCHIVE_REQUEST",
+      "url": "https://www.afu.se/collections/report-files/",
+      "role": "physical_archive"
+    },
+    {
+      "id": "geipan",
+      "name": "CNES GEIPAN",
+      "access": "OPEN_QUERY",
+      "url": "https://www.cnes-geipan.fr/fr/recherche/cas",
+      "role": "official_cases"
+    },
+    {
+      "id": "cisu_usocat",
+      "name": "CISU USOCAT",
+      "access": "ARCHIVE_REQUEST",
+      "url": "https://www.cisu.org/usocat/",
+      "role": "water_cases"
+    },
+    {
+      "id": "brazil_national_archives",
+      "name": "Brazil National Archives OVNI collection",
+      "access": "OPEN_QUERY",
+      "url": "https://www.gov.br/arquivonacional/pt-br/canais_atendimento/imprensa/noticias/conheca-o-fundo-sobre-ovnis-do-arquivo-nacional",
+      "role": "official_documents",
+      "catalogue_url": "https://www.gov.br/arquivonacional/pt-br/servicos/bases-de-dados",
+      "record_count_note": "The official collection notice reported 743 records (1952-2016); a later collection overview says holdings include OVNI records through 2019.",
+      "admission_state": "SIAN_QUERY_CONTRACT_PENDING",
+      "notes": "SIAN supports discovery and access to digitized documents, but a bulk export contract has not been confirmed."
+    },
+    {
+      "id": "canada_lac_ufo_collection",
+      "name": "Library and Archives Canada UFO government records",
+      "access": "METADATA_BATCH_REVIEW",
+      "url": "https://www.canada.ca/en/library-archives/collection/research-help/science-technology/ufos.html",
+      "role": "official_documents",
+      "kind": "lac_collection_search_metadata",
+      "admission_state": "QUERY_EXPORT_CONTRACT_PENDING",
+      "record_count_note": "Official guide reports approximately 9,500 digitized documents from four federal departments/agencies, 1947 to the early 1980s.",
+      "metadata_capability_note": "LAC states Collection Search result lists can be exported as HTML/CSV/XML/JSON; verify query scope and terms before automated metadata collection.",
+      "full_media_policy": "record-level selection_only"
+    },
+    {
+      "id": "argentina_ciae",
+      "name": "Argentina Centro de Identificación Aeroespacial",
+      "access": "OPEN_QUERY",
+      "url": "https://www.argentina.gob.ar/node/120772",
+      "role": "official_cases",
+      "admission_state": "ANNUAL_PUBLICATION_INDEX_PENDING",
+      "notes": "The official page says the center continues public case-resolution service and annual publication; no machine-readable all-case archive was verified."
+    },
+    {
+      "id": "chile_sefaa",
+      "name": "Chile DGAC SEFAA resolved-case publications",
+      "access": "OPEN_QUERY",
+      "url": "https://sefaa.dgac.gob.cl/",
+      "portal_url": "https://sefaa.dgac.gob.cl/2024/03/05/casos-febrero-2024/",
+      "role": "official_cases",
+      "admission_state": "ANNUAL_CASE_INDEX_AND_TERMS_PENDING",
+      "record_count_note": "Official site accepts reports and publishes resolved cases by year; no stable all-case bulk export or API was verified.",
+      "notes": "Treat published cases and media as selected official records, not a complete national reporting denominator."
+    },
+    {
+      "id": "australia_naa_ufo_records",
+      "name": "National Archives of Australia RAAF UFO records",
+      "access": "ARCHIVE_REQUEST",
+      "url": "https://www.naa.gov.au/blog/flying-saucers-fact-or-fiction",
+      "portal_url": "https://www.naa.gov.au/",
+      "role": "official_documents",
+      "admission_state": "RECORDSEARCH_SERIES_AND_DIGITIZATION_CONTRACT_PENDING",
+      "notes": "Official archive confirms retained RAAF UFO sighting records, but a stable public all-record export contract has not been verified. Build a series/item manifest before any image or PDF acquisition."
+    },
+    {
+      "id": "china_ufocn",
+      "name": "China UFO Exploration Network archive index",
+      "access": "ARCHIVE_REQUEST",
+      "url": "https://www.ufocn.com.cn/",
+      "role": "regional_historical_reports",
+      "admission_state": "RIGHTS_AND_ARCHIVE_HOLDER_CONTACT_PENDING",
+      "notes": "A Chinese-language historical archive/index is publicly visible, but no nationwide machine-readable or rights-cleared bulk dataset has been verified."
+    }
+  ]
+}

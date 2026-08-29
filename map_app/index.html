@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: https://tile.openstreetmap.org; connect-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'"
+    >
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="color-scheme" content="dark">
+    <meta name="theme-color" content="#07141b">
+    <title>全球 UAP 資料圖譜</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true"><span>UA</span></div>
+          <div>
+            <p class="eyebrow">PUBLIC EVIDENCE ATLAS</p>
+            <h1>全球 UAP 資料圖譜</h1>
+          </div>
+        </div>
+
+        <div class="release-state" aria-label="系統狀態">
+          <span class="pulse" aria-hidden="true"></span>
+          <span>本機唯讀</span>
+          <span class="release-separator">/</span>
+          <span id="header-release">載入中</span>
+        </div>
+
+        <dl class="top-metrics" aria-label="地圖摘要">
+          <div>
+            <dt>現行資料</dt>
+            <dd id="metric-total">—</dd>
+          </div>
+          <div>
+            <dt>篩選命中</dt>
+            <dd id="metric-visible">—</dd>
+          </div>
+          <div>
+            <dt>地圖來源</dt>
+            <dd id="metric-sources">—</dd>
+          </div>
+        </dl>
+      </header>
+
+      <main class="workspace">
+        <aside class="sidebar" aria-label="地圖篩選器">
+          <section class="notice-card">
+            <p class="notice-kicker">讀圖原則</p>
+            <p>
+              圖上是來源發布的「報告位置」，不是已確認物體的位置，也不是外星生命存在或出沒機率。
+            </p>
+          </section>
+
+          <section class="filter-section">
+            <div class="section-heading">
+              <h2>圖層</h2>
+              <button id="reset-filters" class="text-button" type="button">重設篩選</button>
+            </div>
+
+            <label class="layer-option sighting-option">
+              <input id="layer-sighting" type="checkbox" checked>
+              <span class="layer-dot sighting-dot" aria-hidden="true"></span>
+              <span class="layer-copy">
+                <strong>目擊報告</strong>
+                <small>來源發布、尚未等同實體事件</small>
+              </span>
+              <span id="layer-sighting-count" class="layer-count">—</span>
+            </label>
+
+            <label class="layer-option control-option">
+              <input id="layer-control" type="checkbox" checked>
+              <span class="layer-dot control-dot" aria-hidden="true"></span>
+              <span class="layer-copy">
+                <strong>天文控制</strong>
+                <small>NASA 火流星；永不計入目擊數</small>
+              </span>
+              <span id="layer-control-count" class="layer-count">—</span>
+            </label>
+          </section>
+
+          <section class="filter-section">
+            <h2>地理底圖</h2>
+            <label class="layer-option basemap-option">
+              <input id="basemap-osm" type="checkbox" checked>
+              <span class="basemap-grid" aria-hidden="true"></span>
+              <span class="layer-copy">
+                <strong>OpenStreetMap</strong>
+                <small>國家、城市、道路與地形標示</small>
+              </span>
+              <span id="basemap-status" class="online-tag">線上</span>
+            </label>
+            <label class="layer-option basemap-option">
+              <input id="layer-countries" type="checkbox" checked>
+              <span class="layer-dot country-dot" aria-hidden="true"></span>
+              <span class="layer-copy">
+                <strong>國界與國名</strong>
+                <small>Natural Earth 1:50m；僅供辨位，非法律邊界主張</small>
+              </span>
+              <span id="country-status" class="online-tag">本機</span>
+            </label>
+
+            <div class="texture-pack">
+              <div class="texture-pack-row">
+                <button id="texture-pack-button" class="text-button" type="button">高清地表</button>
+                <span id="texture-pack-state" class="online-tag">偵測中</span>
+              </div>
+              <div id="texture-pack-panel" class="texture-pack-panel" hidden>
+                <p>
+                  最高的 240 px/° 地表（NASA Blue Marble 500 m）不隨附，需在本機安裝。
+                  下載約 400 MB、磁碟約 330 MB。在專案目錄執行：
+                </p>
+                <code id="texture-pack-command">python3 earth_texture_500m.py --install</code>
+                <button id="texture-pack-copy" class="text-button" type="button">複製指令</button>
+                <p class="texture-pack-hint">
+                  安裝完成後這張地圖會自己偵測並啟用，不需要重新整理。移除請執行
+                  <code>--uninstall</code>。
+                </p>
+              </div>
+            </div>
+
+            <p class="basemap-policy">
+              3D 使用本機 NASA 真彩色地球紋理，依畫面每度像素需求自動選層，只讀目前球面視野內的圖磚，仍保留 3D。隨附 15／30／60 px/° 三層；最高的 240 px/° 清晰版（NASA Blue Marble 500 m）因體積較大不隨附，需另行下載安裝：<code>python3 earth_texture_500m.py --install</code>。未安裝時放大會停在 60 px/°，狀態列會標示。需要道路與城市標示時可手動切換 2D。關閉後使用 Natural Earth 離線輪廓。
+              <a href="https://www.openstreetmap.org/fixthemap" target="_blank" rel="noopener noreferrer">回報地圖問題</a>
+            </p>
+          </section>
+
+          <section class="filter-section">
+            <h2>搜尋與時間</h2>
+            <label class="search-field" for="search-input">
+              <span>搜尋地點、標題或來源編號</span>
+              <input
+                id="search-input"
+                type="search"
+                autocomplete="off"
+                placeholder="例如：Taiwan、Phoenix、case ID"
+              >
+            </label>
+
+            <div class="year-fields">
+              <label for="year-from">
+                <span>起始年</span>
+                <input id="year-from" type="number" inputmode="numeric">
+              </label>
+              <span class="year-divider" aria-hidden="true">—</span>
+              <label for="year-to">
+                <span>結束年</span>
+                <input id="year-to" type="number" inputmode="numeric">
+              </label>
+            </div>
+
+            <label class="compact-check">
+              <input id="include-unknown-year" type="checkbox" checked>
+              <span>保留日期不明的報告</span>
+              <span id="unknown-year-count" class="muted-count">—</span>
+            </label>
+          </section>
+
+          <section class="filter-section">
+            <div class="section-heading">
+              <h2>資料來源</h2>
+              <button id="toggle-sources" class="text-button" type="button">全部關閉</button>
+            </div>
+            <div id="source-filters" class="source-filters" role="group" aria-label="資料來源"></div>
+          </section>
+
+          <section class="release-card" aria-labelledby="release-card-title">
+            <div class="section-heading">
+              <h2 id="release-card-title">資料釋出</h2>
+              <span id="integrity-badge" class="integrity-badge">驗證中</span>
+            </div>
+            <dl class="release-details">
+              <div>
+                <dt>Release</dt>
+                <dd id="release-id">—</dd>
+              </div>
+              <div>
+                <dt>建立時間</dt>
+                <dd id="release-built-at">—</dd>
+              </div>
+              <div>
+                <dt>Observation versions</dt>
+                <dd id="release-versions">—</dd>
+              </div>
+              <div>
+                <dt>Current observations</dt>
+                <dd id="release-current">—</dd>
+              </div>
+            </dl>
+          </section>
+
+          <details class="limits-card" open>
+            <summary>目前資料邊界</summary>
+            <ul>
+              <li>地面目擊點目前只來自 UAPDrop；全球分布不代表全球發生率。</li>
+              <li>座標沿用來源公開精度；精度不明時不得當作現場精準定位。</li>
+              <li>九大星體星曆屬天球資料，不會錯畫到 WGS84 地球圖層。</li>
+              <li id="h3-status">H3 聚合狀態載入中。</li>
+            </ul>
+            <a class="architecture-link" href="../DATA_ARCHITECTURE_FOR_MAP_20260813_ZH.md">
+              查看資料架構契約
+            </a>
+          </details>
+
+          <details class="limits-card">
+            <summary>資料來源與授權</summary>
+            <ul class="rights-list">
+              <li>
+                <strong>目擊報告</strong>：UAPDrop.「UAP Sightings Open Dataset」·
+                <a href="https://www.uapdrop.com/data.html" target="_blank" rel="noopener noreferrer">uapdrop.com/data.html</a>
+                · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>；
+                其底層政府紀錄依原檔案館條款屬公有領域。每筆的原始出處欄位保留，以便回溯權威紀錄。
+              </li>
+              <li>
+                <strong>天文控制</strong>：NASA/JPL 火流星與星曆資料。依 NASA 媒體使用規範，事實性使用且不暗示背書者無需另行授權，須標示 NASA 為來源。
+              </li>
+              <li>
+                <strong>地球紋理</strong>：NASA Earth Observatory · Blue Marble Next Generation（500 m 版）。
+              </li>
+              <li>
+                <strong>國界與陸地</strong>：Natural Earth 1:50m admin-0 與 1:110m land（public domain）。
+              </li>
+              <li>
+                <strong>2D 底圖</strong>：© OpenStreetMap contributors（ODbL），僅在開啟時由瀏覽器向 OSM 取用目前視野圖磚。
+              </li>
+            </ul>
+          </details>
+        </aside>
+
+        <section class="map-panel" aria-label="互動式世界地圖">
+          <header class="map-statusbar">
+            <div>
+              <p id="viewport-status" class="viewport-status">正在準備圖層…</p>
+              <p id="filter-summary" class="filter-summary">尚未套用篩選</p>
+            </div>
+            <div id="map-hint" class="map-hint">拖曳旋轉地球 · 滾輪縮放 · 點擊群集深入</div>
+          </header>
+
+          <div id="map-stage" class="map-stage">
+            <canvas id="space-canvas" class="stage-layer" aria-hidden="true"></canvas>
+            <canvas id="globe-canvas" class="stage-layer" aria-hidden="true" hidden></canvas>
+            <canvas
+              id="map-canvas"
+              tabindex="0"
+              aria-label="全球 UAP 與天文控制事件互動地圖"
+            ></canvas>
+
+            <div class="map-tools" role="group" aria-label="地圖縮放工具">
+              <button id="zoom-in" type="button" aria-label="放大">＋</button>
+              <button id="zoom-out" type="button" aria-label="縮小">−</button>
+              <button id="fit-world" class="fit-button" type="button">重置</button>
+            </div>
+
+            <div class="view-toggle" role="group" aria-label="地圖視圖">
+              <button id="mode-globe" class="active" type="button" aria-pressed="true">3D 地球</button>
+              <button id="mode-flat" type="button" aria-pressed="false">2D 地圖</button>
+            </div>
+
+            <div class="legend" aria-label="地圖圖例">
+              <div><span class="legend-mark sighting-mark"></span>目擊報告</div>
+              <div><span class="legend-mark control-mark"></span>天文控制</div>
+              <p>圓圈數字為目前畫面中的點位群集，不是候選事件去重數。</p>
+            </div>
+
+            <div id="map-tooltip" class="map-tooltip" role="tooltip" hidden></div>
+
+            <div id="loading-panel" class="loading-panel" role="status" aria-live="polite">
+              <div class="radar-loader" aria-hidden="true"><span></span></div>
+              <strong id="loading-title">載入本機資料</strong>
+              <span id="loading-detail">正在讀取 release manifest…</span>
+            </div>
+
+            <div id="error-panel" class="error-panel" role="alert" hidden>
+              <strong>地圖無法載入</strong>
+              <p id="error-message"></p>
+              <p>請先執行 <code>python3 uap_lab/serve_map.py --check</code> 檢查本機釋出。</p>
+            </div>
+
+            <aside id="detail-drawer" class="detail-drawer" aria-label="地圖項目明細" hidden>
+              <div class="detail-heading">
+                <span id="detail-kicker">資料明細</span>
+                <button id="close-detail" type="button" aria-label="關閉明細">×</button>
+              </div>
+              <div id="detail-content" class="detail-content"></div>
+            </aside>
+          </div>
+
+          <footer class="map-footer">
+            <span id="osm-credit">
+              底圖：<a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">© OpenStreetMap contributors</a>
+            </span>
+            <span id="natural-earth-credit" hidden>底圖：Natural Earth 1:110m land（public domain）</span>
+            <span id="country-credit">國界：<a href="https://www.naturalearthdata.com/about/terms-of-use/" target="_blank" rel="noopener noreferrer">Natural Earth 1:50m admin-0</a>（public domain）</span>
+            <span id="earth-texture-credit" hidden>
+              地球紋理：<a href="https://science.nasa.gov/earth/earth-observatory/blue-marble-next-generation/base-topography-bathymetry/" target="_blank" rel="noopener noreferrer">NASA Earth Observatory · Blue Marble</a>
+            </span>
+            <span id="data-credit">
+              目擊資料：<a href="https://www.uapdrop.com/data.html" target="_blank" rel="noopener noreferrer">UAPDrop「UAP Sightings Open Dataset」</a>（CC BY 4.0）· 天文控制：NASA/JPL
+            </span>
+            <span id="projection-credit">投影：Web Mercator · 顯示座標為來源公開位置</span>
+            <span id="render-timing">—</span>
+          </footer>
+        </section>
+      </main>
+    </div>
+
+    <noscript>此離線地圖需要 JavaScript 才能載入本機 GeoJSON 圖層。</noscript>
+  </body>
+</html>

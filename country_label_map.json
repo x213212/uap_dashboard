@@ -1,0 +1,455 @@
+{
+  "schema_version": "uap.country_label_map.v1",
+  "usage": "Resolves the source's own country label to ISO 3166-1 alpha-2 where it names exactly one country. Multi-country buckets, ocean and desert regions, and off-Earth reports keep no code: the source never named a single country and the map must not invent one. The original label is always preserved alongside.",
+  "reference": "Natural Earth 1:50m admin-0 (NAME/NAME_EN -> ISO_A2), plus hand-adjudicated aliases",
+  "labels": {
+    "?": {
+      "iso_a2": null,
+      "scope": "unknown"
+    },
+    "Afghanistan": {
+      "iso_a2": "AF",
+      "scope": "country"
+    },
+    "Algeria": {
+      "iso_a2": "DZ",
+      "scope": "country"
+    },
+    "Angola": {
+      "iso_a2": "AO",
+      "scope": "country"
+    },
+    "Antarctic below 70 degrees South": {
+      "iso_a2": null,
+      "scope": "region"
+    },
+    "Arabian Peninsula": {
+      "iso_a2": null,
+      "scope": "region"
+    },
+    "Arctic above 70 degrees North": {
+      "iso_a2": null,
+      "scope": "region"
+    },
+    "Argentina": {
+      "iso_a2": "AR",
+      "scope": "country"
+    },
+    "Armenia": {
+      "iso_a2": "AM",
+      "scope": "country"
+    },
+    "Atlantic Ocean + islands": {
+      "iso_a2": null,
+      "scope": "region"
+    },
+    "Australia": {
+      "iso_a2": "AU",
+      "scope": "country"
+    },
+    "Austria": {
+      "iso_a2": "AT",
+      "scope": "country"
+    },
+    "Azerbaijan": {
+      "iso_a2": "AZ",
+      "scope": "country"
+    },
+    "Belgium, Netherlandsand Luxembourg": {
+      "iso_a2": null,
+      "scope": "multi_country"
+    },
+    "Belorus": {
+      "iso_a2": "BY",
+      "scope": "country"
+    },
+    "Bolivia": {
+      "iso_a2": "BO",
+      "scope": "country"
+    },
+    "Brazil": {
+      "iso_a2": "BR",
+      "scope": "country"
+    },
+    "Bulgaria": {
+      "iso_a2": "BG",
+      "scope": "country"
+    },
+    "CH": {
+      "iso_a2": "CH",
+      "scope": "country"
+    },
+    "Canada": {
+      "iso_a2": "CA",
+      "scope": "country"
+    },
+    "Caribbean area": {
+      "iso_a2": null,
+      "scope": "region"
+    },
+    "Chile": {
+      "iso_a2": "CL",
+      "scope": "country"
+    },
+    "China": {
+      "iso_a2": "CN",
+      "scope": "country"
+    },
+    "Colombia": {
+      "iso_a2": "CO",
+      "scope": "country"
+    },
+    "Congo states": {
+      "iso_a2": null,
+      "scope": "multi_country"
+    },
+    "Costa Rica": {
+      "iso_a2": "CR",
+      "scope": "country"
+    },
+    "Cyprus": {
+      "iso_a2": "CY",
+      "scope": "country"
+    },
+    "Czech and Slovak Republics": {
+      "iso_a2": null,
+      "scope": "multi_country"
+    },
+    "DZ": {
+      "iso_a2": "DZ",
+      "scope": "country"
+    },
+    "ES": {
+      "iso_a2": "ES",
+      "scope": "country"
+    },
+    "Earth Orbit or seen from space stations/capsules": {
+      "iso_a2": null,
+      "scope": "off_earth"
+    },
+    "Ecuador": {
+      "iso_a2": "EC",
+      "scope": "country"
+    },
+    "Egypt": {
+      "iso_a2": "EG",
+      "scope": "country"
+    },
+    "El Salvador": {
+      "iso_a2": "SV",
+      "scope": "country"
+    },
+    "Estonia, Latvia& Lithuania": {
+      "iso_a2": null,
+      "scope": "multi_country"
+    },
+    "Ethiopia": {
+      "iso_a2": "ET",
+      "scope": "country"
+    },
+    "FR": {
+      "iso_a2": "FR",
+      "scope": "country"
+    },
+    "Former Yugoslavia": {
+      "iso_a2": null,
+      "scope": "multi_country"
+    },
+    "France": {
+      "iso_a2": "FR",
+      "scope": "country"
+    },
+    "GA": {
+      "iso_a2": "GA",
+      "scope": "country"
+    },
+    "GB": {
+      "iso_a2": "GB",
+      "scope": "country"
+    },
+    "Georgia": {
+      "iso_a2": "GE",
+      "scope": "country"
+    },
+    "Germany": {
+      "iso_a2": "DE",
+      "scope": "country"
+    },
+    "Great Britain and Ireland": {
+      "iso_a2": null,
+      "scope": "multi_country"
+    },
+    "Greece and Island nations": {
+      "iso_a2": null,
+      "scope": "multi_country"
+    },
+    "Greenland": {
+      "iso_a2": "GL",
+      "scope": "country"
+    },
+    "Guatemala": {
+      "iso_a2": "GT",
+      "scope": "country"
+    },
+    "Guyanas (all 3 of them)": {
+      "iso_a2": null,
+      "scope": "multi_country"
+    },
+    "Himalayan states": {
+      "iso_a2": null,
+      "scope": "multi_country"
+    },
+    "Honduras": {
+      "iso_a2": "HN",
+      "scope": "country"
+    },
+    "Hungary": {
+      "iso_a2": "HU",
+      "scope": "country"
+    },
+    "Iceland": {
+      "iso_a2": "IS",
+      "scope": "country"
+    },
+    "India": {
+      "iso_a2": "IN",
+      "scope": "country"
+    },
+    "Indian Ocean + islands": {
+      "iso_a2": null,
+      "scope": "region"
+    },
+    "Indonesia": {
+      "iso_a2": "ID",
+      "scope": "country"
+    },
+    "Iran": {
+      "iso_a2": "IR",
+      "scope": "country"
+    },
+    "Israel": {
+      "iso_a2": "IL",
+      "scope": "country"
+    },
+    "Italy": {
+      "iso_a2": "IT",
+      "scope": "country"
+    },
+    "Ivory Coast, Ghana, Togo, Benin, Liberia": {
+      "iso_a2": null,
+      "scope": "multi_country"
+    },
+    "Ivory Coast,Ghana,Togo,Benin,Liberia etc.": {
+      "iso_a2": null,
+      "scope": "multi_country"
+    },
+    "Japan": {
+      "iso_a2": "JP",
+      "scope": "country"
+    },
+    "Jordan": {
+      "iso_a2": "JO",
+      "scope": "country"
+    },
+    "Kalahari Desert": {
+      "iso_a2": null,
+      "scope": "region"
+    },
+    "Kazakh Republic": {
+      "iso_a2": "KZ",
+      "scope": "country"
+    },
+    "Kenya": {
+      "iso_a2": "KE",
+      "scope": "country"
+    },
+    "Korea(both sides)": {
+      "iso_a2": null,
+      "scope": "multi_country"
+    },
+    "Kuwait": {
+      "iso_a2": "KW",
+      "scope": "country"
+    },
+    "Lebanon": {
+      "iso_a2": "LB",
+      "scope": "country"
+    },
+    "Libya": {
+      "iso_a2": "LY",
+      "scope": "country"
+    },
+    "MC": {
+      "iso_a2": "MC",
+      "scope": "country"
+    },
+    "Malaysia": {
+      "iso_a2": "MY",
+      "scope": "country"
+    },
+    "Mexico": {
+      "iso_a2": "MX",
+      "scope": "country"
+    },
+    "Mongolia": {
+      "iso_a2": "MN",
+      "scope": "country"
+    },
+    "Morocco": {
+      "iso_a2": "MA",
+      "scope": "country"
+    },
+    "Mozambique": {
+      "iso_a2": "MZ",
+      "scope": "country"
+    },
+    "New Zealand": {
+      "iso_a2": "NZ",
+      "scope": "country"
+    },
+    "Nicaragua": {
+      "iso_a2": "NI",
+      "scope": "country"
+    },
+    "Nigeria": {
+      "iso_a2": "NG",
+      "scope": "country"
+    },
+    "Pacific Ocean and non - Asian islands": {
+      "iso_a2": null,
+      "scope": "region"
+    },
+    "Pakistan": {
+      "iso_a2": "PK",
+      "scope": "country"
+    },
+    "Panama": {
+      "iso_a2": "PA",
+      "scope": "country"
+    },
+    "Paraguay": {
+      "iso_a2": "PY",
+      "scope": "country"
+    },
+    "Peru": {
+      "iso_a2": "PE",
+      "scope": "country"
+    },
+    "Philippines": {
+      "iso_a2": "PH",
+      "scope": "country"
+    },
+    "Poland": {
+      "iso_a2": "PL",
+      "scope": "country"
+    },
+    "Portugal": {
+      "iso_a2": "PT",
+      "scope": "country"
+    },
+    "Republic of South Africa": {
+      "iso_a2": "ZA",
+      "scope": "country"
+    },
+    "Romania": {
+      "iso_a2": "RO",
+      "scope": "country"
+    },
+    "Russia": {
+      "iso_a2": "RU",
+      "scope": "country"
+    },
+    "Sahara": {
+      "iso_a2": null,
+      "scope": "region"
+    },
+    "Scandanavian and Finland": {
+      "iso_a2": null,
+      "scope": "multi_country"
+    },
+    "Spain": {
+      "iso_a2": "ES",
+      "scope": "country"
+    },
+    "Sudan": {
+      "iso_a2": "SD",
+      "scope": "country"
+    },
+    "Switzerland": {
+      "iso_a2": "CH",
+      "scope": "country"
+    },
+    "Syria": {
+      "iso_a2": "SY",
+      "scope": "country"
+    },
+    "Tadzhik Republic": {
+      "iso_a2": "TJ",
+      "scope": "country"
+    },
+    "Taiwan China": {
+      "iso_a2": "TW",
+      "scope": "country"
+    },
+    "Tanzania": {
+      "iso_a2": "TZ",
+      "scope": "country"
+    },
+    "Thailand": {
+      "iso_a2": "TH",
+      "scope": "country"
+    },
+    "The Moon": {
+      "iso_a2": null,
+      "scope": "off_earth"
+    },
+    "Tunisia": {
+      "iso_a2": "TN",
+      "scope": "country"
+    },
+    "Turkey": {
+      "iso_a2": "TR",
+      "scope": "country"
+    },
+    "Turkmen Republic": {
+      "iso_a2": "TM",
+      "scope": "country"
+    },
+    "US": {
+      "iso_a2": "US",
+      "scope": "country"
+    },
+    "USA": {
+      "iso_a2": "US",
+      "scope": "country"
+    },
+    "Uganda": {
+      "iso_a2": "UG",
+      "scope": "country"
+    },
+    "Ukraine": {
+      "iso_a2": "UA",
+      "scope": "country"
+    },
+    "Uruguay": {
+      "iso_a2": "UY",
+      "scope": "country"
+    },
+    "Uzbek Republic": {
+      "iso_a2": "UZ",
+      "scope": "country"
+    },
+    "Venezuela": {
+      "iso_a2": "VE",
+      "scope": "country"
+    },
+    "Vietnam": {
+      "iso_a2": "VN",
+      "scope": "country"
+    },
+    "Zimbabwe & Zambia": {
+      "iso_a2": null,
+      "scope": "multi_country"
+    }
+  }
+}

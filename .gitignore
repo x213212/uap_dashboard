@@ -1,0 +1,27 @@
+# Bytecode and test caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local server and tool logs: request logs contain client addresses.
+*.log
+
+# Collected evidence and derived data.
+#
+# Raw snapshots, canonical records, the warehouse and built releases are not
+# redistributed here: run collect.py and build_map.py to produce them locally.
+# Rights-review receipts are kept, because they are the evidence behind the
+# admission verdicts recorded in source_rights_targets.json.
+data/*
+!data/rights_review/
+
+# Third-party video corpora: channel titles and transcript evidence are the
+# rights holders' content and have not been through a source admission review.
+corpora/
+
+# The optional 240 px/degree surface pack (~330 MB), installed on demand with
+# earth_texture_500m.py --install.
+map_app/assets/earth_lod1/l3/
+
+# Static build output.
+dist/

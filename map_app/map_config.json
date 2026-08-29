@@ -1,0 +1,19 @@
+{
+  "schema_version": "uap.map_app_config.v1",
+  "default_basemap": "osm_standard",
+  "basemaps": {
+    "osm_standard": {
+      "label": "OpenStreetMap Standard",
+      "tile_url_template": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+      "minimum_zoom": 0,
+      "maximum_zoom": 19,
+      "attribution": "© OpenStreetMap contributors",
+      "attribution_url": "https://www.openstreetmap.org/copyright",
+      "tile_policy_url": "https://operations.osmfoundation.org/policies/tiles/",
+      "network_mode": "visible_viewport_only",
+      "prefetch": false,
+      "offline_download": false,
+      "fallback": "natural_earth_110m_land"
+    }
+  }
+}
