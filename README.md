@@ -1,5 +1,12 @@
 # Global UAP / sighting collection lab
 
+![The 3D globe at 240 px/degree with country outlines, report clusters and source
+attribution](docs/screenshot-globe.jpg)
+
+*The globe with the optional 240 px/degree surface installed: Natural Earth
+country outlines, UAPDrop sighting clusters, and every source credited in the
+footer. Rendered locally — nothing on this view comes from a network service.*
+
 This is a standalone, read-only collector for the user's global sighting-source
 project.  It deliberately lives outside the trading-system code and does not
 contact broker, cloud, SSH, or trading services.
