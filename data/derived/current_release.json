@@ -1,0 +1,44 @@
+{
+  "built_at": "2026-08-29T15:59:51.189965+00:00",
+  "h3": {
+    "computed": false,
+    "reason": "H3 is a derived optional layer; no H3 runtime is installed in this build."
+  },
+  "map_artifacts": {
+    "controls_current": {
+      "compressed_bytes": 80611,
+      "compressed_sha256": "1b098d1ecca293920a4a3ebd2044b360e25faac23d812bf3a9bb4d31406a89fb",
+      "content_encoding": "gzip",
+      "content_type": "application/geo+json",
+      "feature_count": 881,
+      "path": "map_features/controls_current.geojson.gz"
+    },
+    "sightings_current": {
+      "compressed_bytes": 4220989,
+      "compressed_sha256": "ce9da1a22ac6b24398bb3d0867772546a5ff253c5e7722a8ca07b03cd2d6ee33",
+      "content_encoding": "gzip",
+      "content_type": "application/geo+json",
+      "feature_count": 28252,
+      "path": "map_features/sightings_current.geojson.gz"
+    }
+  },
+  "map_features": {
+    "controls_current": 881,
+    "sightings_current": 28252
+  },
+  "observation_current_count": 29322,
+  "observation_schema_version": "uap.observation.v1",
+  "observation_version_count": 29331,
+  "release_id": "local-map-v4",
+  "role_version_counts": {
+    "astronomy_control": 899,
+    "sighting": 28432
+  },
+  "schema_version": "uap.map_release.v1",
+  "source_record_counts": {
+    "nasa_fireball": 881,
+    "nasa_horizons_9_bodies": 18,
+    "uap_observatory": 118,
+    "uapdrop": 28314
+  }
+}

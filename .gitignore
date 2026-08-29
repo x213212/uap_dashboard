@@ -34,6 +34,21 @@ authorized_keys
 data/*
 !data/rights_review/
 
+# The published map needs exactly three files: the release pointer and the two
+# map layers it names. Everything else under data/ - the raw snapshots, the
+# warehouse, and the superseded releases - stays local. Update the release id
+# here when a new one becomes current.
+!data/derived/
+data/derived/*
+!data/derived/current_release.json
+!data/derived/releases/
+data/derived/releases/*
+!data/derived/releases/local-map-v4/
+data/derived/releases/local-map-v4/*
+!data/derived/releases/local-map-v4/map_features/
+data/derived/releases/local-map-v4/map_features/*
+!data/derived/releases/local-map-v4/map_features/*.geojson.gz
+
 # Third-party video corpora: channel titles and transcript evidence are the
 # rights holders' content and have not been through a source admission review.
 corpora/
