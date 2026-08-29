@@ -49,9 +49,22 @@ a verdict without its evidence is only an assertion.
 
 ## Data these tools collect
 
-Nothing under `data/` is redistributed by this repository. Running `collect.py`
-downloads records from the providers listed in `sources.json`, and each provider's
-terms then apply to what you hold and to anything you publish from it.
+Almost nothing under `data/` is redistributed by this repository. The exceptions
+are the three files the published map reads, which are committed so the site can
+be built from a clean checkout:
+
+- `data/derived/current_release.json` — the release pointer.
+- `data/derived/releases/*/map_features/sightings_current.geojson.gz` — UAPDrop
+  report positions, CC BY 4.0, attribution to UAPDrop required.
+- `data/derived/releases/*/map_features/controls_current.geojson.gz` — NASA/JPL
+  fireball positions, NASA acknowledged as the source, no endorsement implied.
+
+Both layers carry only sources marked *cleared for publication* below; the
+build refuses to ship a record whose source is not.
+
+Everything else under `data/` stays local. Running `collect.py` downloads records
+from the providers listed in `sources.json`, and each provider's terms then apply
+to what you hold and to anything you publish from it.
 
 The reviewed positions are recorded in `source_rights_targets.json` with their
 evidence in `data/rights_review/`, and summarised in
